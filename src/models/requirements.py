@@ -1,77 +1,111 @@
-"""Requirement data models."""
+"""Pydantic models for regulatory requirements."""
 
-from typing import List, Optional, Dict, Any
-from dataclasses import dataclass, field
-from enum import Enum
-
-
-class RequirementType(str, Enum):
-    """Type of requirement."""
-    MANDATORY = "mandatory"
-    RECOMMENDED = "recommended"
-    OPTIONAL = "optional"
-    DEFINITION = "definition"
-    EXEMPTION = "exemption"
+from typing import List, Optional, Dict, Literal
+from pydantic import BaseModel, Field
 
 
-class RequirementCategory(str, Enum):
-    """Requirement category."""
-    CDD = "CDD"
-    EDD = "EDD"
-    KYC = "KYC"
-    UBO = "UBO"
-    PEP = "PEP"
-    SANCTIONS = "SANCTIONS"
-    STR = "STR"
-    RISK = "RISK"
-    GOVERNANCE = "GOVERNANCE"
-    TRAINING = "TRAINING"
-    RECORD_KEEPING = "RECORD_KEEPING"
-    OTHER = "OTHER"
+class Requirement(BaseModel):
+    """A discrete regulatory requirement extracted from a benchmark document."""
+
+    requirement_id: str = Field(..., description="Unique requirement identifier (e.g., 'AMLD6-Art-14-5')")
+    source: str = Field(..., description="Regulatory source name (e.g., 'EU AMLD6')")
+    citation: str = Field(..., description="Article/section reference (e.g., 'Article 14(5)')")
+    text: str = Field(..., description="Full requirement text")
+    requirement_type: Literal["mandatory", "recommended", "definition", "guidance", "exemption"] = Field(
+        default="mandatory",
+        description="Type of requirement"
+    )
+    category: str = Field(..., description="Compliance category (e.g., 'Enhanced Due Diligence')")
+    obligations: List[str] = Field(
+        default_factory=list,
+        description="Specific obligations extracted from requirement"
+    )
+    keywords: List[str] = Field(
+        default_factory=list,
+        description="Search keywords and synonyms"
+    )
+    cross_references: List[str] = Field(
+        default_factory=list,
+        description="References to other articles/sections"
+    )
+    criticality: Literal["critical", "high", "medium", "low"] = Field(
+        default="high",
+        description="Criticality level"
+    )
+    metadata: Dict = Field(default_factory=dict, description="Additional metadata")
+
+    class Config:
+        json_schema_extra = {
+            "example": {
+                "requirement_id": "AMLD6-Art-14-5",
+                "source": "EU AMLD6",
+                "citation": "Article 14(5)",
+                "text": "Member States shall require that enhanced CDD measures are applied...",
+                "requirement_type": "mandatory",
+                "category": "Enhanced Due Diligence",
+                "obligations": ["Apply enhanced CDD for high-risk situations"],
+                "keywords": ["enhanced due diligence", "EDD", "high risk"],
+                "cross_references": ["Article 18", "Article 18a"],
+                "criticality": "high",
+                "metadata": {}
+            }
+        }
 
 
-class Criticality(str, Enum):
-    """Requirement criticality level."""
-    CRITICAL = "critical"
-    HIGH = "high"
-    MEDIUM = "medium"
-    LOW = "low"
+class SearchStrategy(BaseModel):
+    """Search strategy for a requirement."""
+
+    requirement_id: str = Field(..., description="Associated requirement ID")
+    primary_queries: List[str] = Field(
+        default_factory=list,
+        description="Primary search queries"
+    )
+    secondary_queries: List[str] = Field(
+        default_factory=list,
+        description="Secondary/fallback queries"
+    )
+    category_queries: List[str] = Field(
+        default_factory=list,
+        description="Category-level queries"
+    )
+    concepts_to_find: List[str] = Field(
+        default_factory=list,
+        description="Concepts that should be present"
+    )
+
+    class Config:
+        json_schema_extra = {
+            "example": {
+                "requirement_id": "AMLD6-Art-3-6-a",
+                "primary_queries": ["beneficial owner", "ultimate beneficial owner", "UBO"],
+                "secondary_queries": ["ownership threshold", "25 percent ownership"],
+                "category_queries": ["customer due diligence ownership"],
+                "concepts_to_find": ["ownership identification process"]
+            }
+        }
 
 
-@dataclass
-class Requirement:
-    """A regulatory requirement extracted from a benchmark document."""
-    requirement_id: str
-    source: str
-    citation: str
-    type: RequirementType
-    category: RequirementCategory
-    text: str
-    obligations: List[str] = field(default_factory=list)
-    keywords: List[str] = field(default_factory=list)
-    cross_references: List[str] = field(default_factory=list)
-    criticality: Criticality = Criticality.MEDIUM
-    metadata: Dict[str, Any] = field(default_factory=dict)
+class RequirementExtractionResult(BaseModel):
+    """Result of requirement extraction from a benchmark document."""
 
-    def __str__(self) -> str:
-        """String representation."""
-        return f"Requirement({self.citation}: {self.text[:50]}...)"
+    success: bool = Field(..., description="Whether extraction succeeded")
+    requirements: List[Requirement] = Field(
+        default_factory=list,
+        description="Extracted requirements"
+    )
+    total_requirements: int = Field(default=0, description="Total number of requirements extracted")
+    error: Optional[str] = Field(None, description="Error message if failed")
+    warnings: List[str] = Field(default_factory=list, description="Warning messages")
+    processing_time: Optional[float] = Field(None, description="Processing time in seconds")
 
-
-@dataclass
-class SearchStrategy:
-    """Search strategy for finding policy coverage of a requirement."""
-    requirement_id: str
-    primary_queries: List[str] = field(default_factory=list)
-    secondary_queries: List[str] = field(default_factory=list)
-    category_queries: List[str] = field(default_factory=list)
-    concepts_to_find: List[str] = field(default_factory=list)
-    negation_queries: List[str] = field(default_factory=list)
-
-    def get_all_queries(self) -> List[str]:
-        """Get all queries in order of priority."""
-        return (
-            self.primary_queries +
-            self.secondary_queries +
-            self.category_queries
-        )
+    class Config:
+        json_schema_extra = {
+            "example": {
+                "success": True,
+                "requirements": [],
+                "total_requirements": 35,
+                "error": None,
+                "warnings": [],
+                "processing_time": 45.2
+            }
+        }

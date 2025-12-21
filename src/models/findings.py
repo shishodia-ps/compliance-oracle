@@ -1,125 +1,104 @@
-"""Finding and gap data models."""
+"""Pydantic models for compliance findings."""
 
-from typing import List, Optional, Dict, Any
-from dataclasses import dataclass, field
-from enum import Enum
-
-
-class ComplianceStatus(str, Enum):
-    """Compliance status determination."""
-    COMPLIANT = "compliant"
-    PARTIAL_GAP = "partial_gap"
-    GAP = "gap"
-    CONTRADICTION = "contradiction"
-    UNCERTAIN = "uncertain"
+from typing import List, Optional, Dict, Literal
+from pydantic import BaseModel, Field
 
 
-class Severity(str, Enum):
-    """Gap severity level."""
-    CRITICAL = "critical"
-    HIGH = "high"
-    MEDIUM = "medium"
-    LOW = "low"
-
-
-@dataclass
-class ReasoningStep:
+class ReasoningStep(BaseModel):
     """A single step in the reasoning chain."""
-    step: int
-    observation: str
-    analysis: str
 
-    def __str__(self) -> str:
-        """String representation."""
-        return f"{self.step}. {self.observation} → {self.analysis}"
+    step: int = Field(..., description="Step number")
+    observation: str = Field(..., description="What was observed")
+    analysis: str = Field(..., description="Analysis of the observation")
 
 
-@dataclass
-class PolicySection:
-    """A policy section found during retrieval."""
-    section_id: str
-    title: Optional[str]
-    content: str
-    relevance_score: float
-    page: Optional[int] = None
-    found_by_query: Optional[str] = None
+class GapDetails(BaseModel):
+    """Details about a compliance gap."""
 
-    def __str__(self) -> str:
-        """String representation."""
-        return f"Section {self.section_id} (score: {self.relevance_score:.2f})"
+    what_is_missing: str = Field(..., description="What is missing from the policy")
+    policy_has: Optional[str] = Field(None, description="What the policy currently has")
+    policy_lacks: str = Field(..., description="What the policy lacks")
 
 
-@dataclass
-class GapDetails:
-    """Detailed information about a gap."""
-    what_is_missing: str
-    policy_has: Optional[str] = None
-    policy_lacks: Optional[str] = None
-    specific_deficiency: Optional[str] = None
+class Finding(BaseModel):
+    """A compliance finding (gap, partial compliance, or compliance confirmation)."""
 
+    finding_id: str = Field(..., description="Unique finding identifier")
+    requirement_id: str = Field(..., description="Associated requirement ID")
+    requirement_citation: str = Field(..., description="Requirement citation")
+    requirement_text: str = Field(..., description="Requirement text")
+    status: Literal["compliant", "partial_gap", "gap", "contradiction", "uncertain"] = Field(
+        ...,
+        description="Compliance status"
+    )
+    confidence: float = Field(..., ge=0.0, le=1.0, description="Confidence score (0-1)")
+    severity: Literal["critical", "high", "medium", "low"] = Field(
+        ...,
+        description="Severity level"
+    )
+    reasoning_chain: List[ReasoningStep] = Field(
+        default_factory=list,
+        description="Chain of reasoning steps"
+    )
+    gap_details: Optional[GapDetails] = Field(None, description="Details about the gap")
+    policy_sections_reviewed: List[str] = Field(
+        default_factory=list,
+        description="Policy sections that were reviewed"
+    )
+    recommendation: str = Field(..., description="Actionable recommendation")
+    metadata: Dict = Field(default_factory=dict, description="Additional metadata")
 
-@dataclass
-class Finding:
-    """A compliance finding (gap or confirmation)."""
-    requirement_id: str
-    requirement_citation: str
-    requirement_text: str
-    status: ComplianceStatus
-    confidence: float
-    reasoning_chain: List[ReasoningStep] = field(default_factory=list)
-    sections_found: List[PolicySection] = field(default_factory=list)
-    gap_details: Optional[GapDetails] = None
-    recommendation: Optional[str] = None
-    severity: Optional[Severity] = None
-    metadata: Dict[str, Any] = field(default_factory=dict)
-
-    def is_gap(self) -> bool:
-        """Check if this finding represents a gap."""
-        return self.status in [
-            ComplianceStatus.GAP,
-            ComplianceStatus.PARTIAL_GAP,
-            ComplianceStatus.CONTRADICTION
-        ]
-
-    def get_severity_score(self) -> int:
-        """Get numeric severity score (higher = more severe)."""
-        severity_map = {
-            Severity.CRITICAL: 4,
-            Severity.HIGH: 3,
-            Severity.MEDIUM: 2,
-            Severity.LOW: 1,
+    class Config:
+        json_schema_extra = {
+            "example": {
+                "finding_id": "FIND-001",
+                "requirement_id": "AMLD6-Art-3-6-a",
+                "requirement_citation": "Article 3(6)(a)",
+                "requirement_text": "...",
+                "status": "partial_gap",
+                "confidence": 0.85,
+                "severity": "high",
+                "reasoning_chain": [],
+                "gap_details": None,
+                "policy_sections_reviewed": ["2.3", "2.3.1"],
+                "recommendation": "Add to Section 2.3: 'Beneficial owner means...'",
+                "metadata": {}
+            }
         }
-        return severity_map.get(self.severity, 0)
-
-    def __str__(self) -> str:
-        """String representation."""
-        return f"Finding({self.requirement_citation}, {self.status.value}, conf={self.confidence:.2f})"
 
 
-@dataclass
-class ValidationResult:
-    """Result of finding validation."""
-    is_valid: bool
-    validation_checks: Dict[str, bool] = field(default_factory=dict)
-    issues: List[str] = field(default_factory=list)
-    suggestions: List[str] = field(default_factory=list)
+class AnalysisReport(BaseModel):
+    """Complete analysis report."""
 
-    def __str__(self) -> str:
-        """String representation."""
-        status = "VALID" if self.is_valid else "INVALID"
-        return f"ValidationResult({status}, {len(self.issues)} issues)"
+    report_id: str = Field(..., description="Unique report identifier")
+    policy_document_name: str = Field(..., description="Policy document name")
+    benchmark_name: str = Field(..., description="Benchmark name")
+    jurisdiction: str = Field(..., description="Jurisdiction")
+    domain: str = Field(..., description="Domain (e.g., AML)")
+    findings: List[Finding] = Field(default_factory=list, description="All findings")
+    total_requirements_checked: int = Field(default=0, description="Total requirements checked")
+    total_gaps_found: int = Field(default=0, description="Total gaps found")
+    compliant_count: int = Field(default=0, description="Number of compliant requirements")
+    gap_count: int = Field(default=0, description="Number of gaps")
+    partial_count: int = Field(default=0, description="Number of partial gaps")
+    summary: str = Field(..., description="Executive summary")
+    metadata: Dict = Field(default_factory=dict, description="Additional metadata")
 
-
-@dataclass
-class RetrievalResult:
-    """Result of the retrieval process."""
-    requirement_id: str
-    retrieval_attempts: int
-    queries_executed: List[str]
-    sections_found: List[PolicySection]
-    coverage_assessment: str  # "comprehensive", "partial", "insufficient", "none"
-    confidence: float
-
-    def __str__(self) -> str:
-        """String representation."""
-        return f"RetrievalResult({len(self.sections_found)} sections, {self.coverage_assessment})"
+    class Config:
+        json_schema_extra = {
+            "example": {
+                "report_id": "RPT-001",
+                "policy_document_name": "AML Policy v2.3",
+                "benchmark_name": "EU AMLD6",
+                "jurisdiction": "Luxembourg",
+                "domain": "AML",
+                "findings": [],
+                "total_requirements_checked": 35,
+                "total_gaps_found": 8,
+                "compliant_count": 25,
+                "gap_count": 8,
+                "partial_count": 2,
+                "summary": "The policy is largely compliant with...",
+                "metadata": {}
+            }
+        }

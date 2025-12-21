@@ -1,55 +1,36 @@
-"""Data models for compliance oracle."""
+"""Data models for Compliance Oracle."""
 
-from .documents import (
+from src.models.documents import (
     Document,
-    DocumentMetadata,
-    DocumentType,
-    DocumentFormat,
-    Section,
-    Chunk
+    DocumentSection,
+    DocumentChunk,
+    ParseResult,
 )
-
-from .requirements import (
+from src.models.requirements import (
     Requirement,
-    RequirementType,
-    RequirementCategory,
-    Criticality,
-    SearchStrategy
+    SearchStrategy,
+    RequirementExtractionResult,
 )
-
-from .findings import (
+from src.models.findings import (
     Finding,
-    ComplianceStatus,
-    Severity,
     ReasoningStep,
-    PolicySection,
     GapDetails,
-    ValidationResult,
-    RetrievalResult
+    AnalysisReport,
 )
-
 
 __all__ = [
     # Documents
     "Document",
-    "DocumentMetadata",
-    "DocumentType",
-    "DocumentFormat",
-    "Section",
-    "Chunk",
+    "DocumentSection",
+    "DocumentChunk",
+    "ParseResult",
     # Requirements
     "Requirement",
-    "RequirementType",
-    "RequirementCategory",
-    "Criticality",
     "SearchStrategy",
+    "RequirementExtractionResult",
     # Findings
     "Finding",
-    "ComplianceStatus",
-    "Severity",
     "ReasoningStep",
-    "PolicySection",
     "GapDetails",
-    "ValidationResult",
-    "RetrievalResult",
+    "AnalysisReport",
 ]

@@ -1,105 +1,94 @@
-"""Document data models."""
+"""Pydantic models for document structures."""
 
 from typing import List, Optional, Dict, Any
-from dataclasses import dataclass, field
 from datetime import datetime
-from enum import Enum
+from pydantic import BaseModel, Field
 
 
-class DocumentType(str, Enum):
-    """Document type enumeration."""
-    POLICY = "policy"
-    BENCHMARK = "benchmark"
-    REGULATION = "regulation"
-    GUIDELINE = "guideline"
-
-
-class DocumentFormat(str, Enum):
-    """Document format enumeration."""
-    PDF = "pdf"
-    DOCX = "docx"
-    DOC = "doc"
-    HTML = "html"
-    TXT = "txt"
-    MD = "md"
-    RTF = "rtf"
-    XLSX = "xlsx"
-    CSV = "csv"
-
-
-@dataclass
-class DocumentMetadata:
-    """Metadata for a document."""
-    filename: str
-    format: DocumentFormat
-    document_type: DocumentType
-    file_size: int
-    page_count: Optional[int] = None
-    language: Optional[str] = None
-    jurisdiction: Optional[str] = None
-    domain: Optional[str] = None
-    upload_date: datetime = field(default_factory=datetime.now)
-    version: Optional[str] = None
-    effective_date: Optional[datetime] = None
-    custom_metadata: Dict[str, Any] = field(default_factory=dict)
-
-
-@dataclass
-class Section:
+class DocumentSection(BaseModel):
     """A section within a document."""
-    section_id: str
-    title: Optional[str]
-    content: str
-    page: Optional[int] = None
-    parent_section_id: Optional[str] = None
-    subsection_ids: List[str] = field(default_factory=list)
-    level: int = 0
-    metadata: Dict[str, Any] = field(default_factory=dict)
 
-    def __str__(self) -> str:
-        """String representation."""
-        title_str = f" {self.title}" if self.title else ""
-        return f"Section {self.section_id}{title_str}"
+    section_id: str = Field(..., description="Section identifier (e.g., '3.2.1')")
+    title: str = Field(..., description="Section title")
+    content: str = Field(..., description="Section content/text")
+    page: Optional[int] = Field(None, description="Page number where section appears")
+    parent: Optional[str] = Field(None, description="Parent section ID")
+    subsections: List[str] = Field(default_factory=list, description="List of subsection IDs")
+    metadata: Dict[str, Any] = Field(default_factory=dict, description="Additional metadata")
 
-
-@dataclass
-class Chunk:
-    """A text chunk for vector embedding."""
-    chunk_id: str
-    section_id: str
-    content: str
-    translated_content: Optional[str] = None
-    page: Optional[int] = None
-    start_char: Optional[int] = None
-    end_char: Optional[int] = None
-    metadata: Dict[str, Any] = field(default_factory=dict)
+    class Config:
+        json_schema_extra = {
+            "example": {
+                "section_id": "3.2",
+                "title": "Customer Due Diligence",
+                "content": "The bank shall perform CDD on all customers...",
+                "page": 12,
+                "parent": "3",
+                "subsections": ["3.2.1", "3.2.2"],
+                "metadata": {}
+            }
+        }
 
 
-@dataclass
-class Document:
-    """A parsed document with structured content."""
-    document_id: str
-    metadata: DocumentMetadata
-    sections: List[Section] = field(default_factory=list)
-    raw_text: Optional[str] = None
-    structure_tree: Optional[Dict[str, Any]] = None
-    language: Optional[str] = None
+class DocumentChunk(BaseModel):
+    """A chunk of text from a document for embedding."""
 
-    def get_section(self, section_id: str) -> Optional[Section]:
-        """Get a section by ID."""
-        for section in self.sections:
-            if section.section_id == section_id:
-                return section
-        return None
+    chunk_id: str = Field(..., description="Unique chunk identifier")
+    content: str = Field(..., description="Chunk content")
+    section_id: Optional[str] = Field(None, description="Associated section ID")
+    page: Optional[int] = Field(None, description="Page number")
+    chunk_index: int = Field(..., description="Index of chunk in document")
+    metadata: Dict[str, Any] = Field(default_factory=dict, description="Additional metadata")
 
-    def get_sections_by_page(self, page: int) -> List[Section]:
-        """Get all sections on a specific page."""
-        return [s for s in self.sections if s.page == page]
 
-    def get_all_text(self) -> str:
-        """Get all text from all sections."""
-        return "\n\n".join(s.content for s in self.sections)
+class Document(BaseModel):
+    """A parsed document with structure."""
 
-    def __str__(self) -> str:
-        """String representation."""
-        return f"Document({self.metadata.filename}, {len(self.sections)} sections)"
+    document_id: str = Field(..., description="Unique document identifier")
+    filename: str = Field(..., description="Original filename")
+    file_type: str = Field(..., description="File type (pdf, docx, etc.)")
+    title: Optional[str] = Field(None, description="Document title")
+    language: str = Field(default="en", description="Detected language code")
+    raw_text: str = Field(..., description="Raw extracted text")
+    sections: List[DocumentSection] = Field(default_factory=list, description="Structured sections")
+    chunks: List[DocumentChunk] = Field(default_factory=list, description="Text chunks for embedding")
+    total_pages: Optional[int] = Field(None, description="Total number of pages")
+    parsed_at: datetime = Field(default_factory=datetime.utcnow, description="When document was parsed")
+    metadata: Dict[str, Any] = Field(default_factory=dict, description="Document metadata")
+
+    class Config:
+        json_schema_extra = {
+            "example": {
+                "document_id": "doc_123",
+                "filename": "aml_policy.pdf",
+                "file_type": "pdf",
+                "title": "Anti-Money Laundering Policy",
+                "language": "en",
+                "raw_text": "Full document text...",
+                "sections": [],
+                "chunks": [],
+                "total_pages": 50,
+                "metadata": {}
+            }
+        }
+
+
+class ParseResult(BaseModel):
+    """Result of document parsing operation."""
+
+    success: bool = Field(..., description="Whether parsing succeeded")
+    document: Optional[Document] = Field(None, description="Parsed document if successful")
+    error: Optional[str] = Field(None, description="Error message if failed")
+    warnings: List[str] = Field(default_factory=list, description="Warning messages")
+    processing_time: Optional[float] = Field(None, description="Processing time in seconds")
+
+    class Config:
+        json_schema_extra = {
+            "example": {
+                "success": True,
+                "document": None,
+                "error": None,
+                "warnings": ["Document may be incomplete"],
+                "processing_time": 2.5
+            }
+        }
