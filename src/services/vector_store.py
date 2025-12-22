@@ -128,8 +128,8 @@ class VectorStore:
                 "title": section.title or "",
                 "page": section.page or 0,
                 "language": language or "unknown",
-                "parent_section_id": section.parent_section_id or "",
-                "level": section.level,
+                "parent": section.parent or "",
+                "level": section.metadata.get("level", 0),
             }
 
             # Add translated text to metadata if available
