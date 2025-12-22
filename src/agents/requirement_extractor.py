@@ -5,13 +5,13 @@ import json
 from typing import List, Dict, Any, Optional, Literal
 import logging
 
-from src.agents.base import BaseAgent
-from src.models.documents import Document, DocumentSection
-from src.models.requirements import (
+from .base import BaseAgent
+from ..models.documents import Document, DocumentSection
+from ..models.requirements import (
     Requirement,
     RequirementExtractionResult,
 )
-from src.config.keywords import MULTILINGUAL_KEYWORDS
+from ..config.keywords import MULTILINGUAL_KEYWORDS
 
 logger = logging.getLogger(__name__)
 

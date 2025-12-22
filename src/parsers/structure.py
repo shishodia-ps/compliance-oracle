@@ -3,7 +3,7 @@
 import re
 from typing import List, Optional, Dict, Tuple
 
-from src.models.documents import DocumentSection
+from ..models.documents import DocumentSection
 
 
 class StructureExtractor:

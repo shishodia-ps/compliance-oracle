@@ -12,7 +12,7 @@ except ImportError:
     CHROMADB_AVAILABLE = False
 
 from .embedding import EmbeddingService
-from ..models.documents import Section, Chunk
+from ..models.documents import DocumentSection as Section, DocumentChunk as Chunk
 
 
 logger = structlog.get_logger()
@@ -128,8 +128,8 @@ class VectorStore:
                 "title": section.title or "",
                 "page": section.page or 0,
                 "language": language or "unknown",
-                "parent_section_id": section.parent_section_id or "",
-                "level": section.level,
+                "parent": section.parent or "",
+                "level": section.metadata.get("level", 0),
             }
 
             # Add translated text to metadata if available

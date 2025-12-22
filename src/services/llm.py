@@ -16,12 +16,21 @@ try:
     OPENAI_AVAILABLE = True
 except ImportError:
     OPENAI_AVAILABLE = False
+    # Define placeholder exceptions if openai is not available
+    class RateLimitError(Exception):
+        pass
+    class APITimeoutError(Exception):
+        pass
+    class APIError(Exception):
+        pass
 
 try:
     from anthropic import Anthropic, APIError as AnthropicAPIError
     ANTHROPIC_AVAILABLE = True
 except ImportError:
     ANTHROPIC_AVAILABLE = False
+    class AnthropicAPIError(Exception):
+        pass
 
 from ..config.models import MODEL_REGISTRY, get_model_config, estimate_cost
 
