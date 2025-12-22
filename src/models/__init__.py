@@ -1,21 +1,26 @@
 """Data models for Compliance Oracle."""
 
-from src.models.documents import (
+from .documents import (
     Document,
     DocumentSection,
     DocumentChunk,
     ParseResult,
 )
-from src.models.requirements import (
+from .requirements import (
     Requirement,
     SearchStrategy,
     RequirementExtractionResult,
 )
-from src.models.findings import (
+from .findings import (
     Finding,
     ReasoningStep,
     GapDetails,
     AnalysisReport,
+    ComplianceStatus,
+    Severity,
+    PolicySection,
+    RetrievalResult,
+    ValidationResult,
 )
 
 __all__ = [
@@ -33,4 +38,9 @@ __all__ = [
     "ReasoningStep",
     "GapDetails",
     "AnalysisReport",
+    "ComplianceStatus",
+    "Severity",
+    "PolicySection",
+    "RetrievalResult",
+    "ValidationResult",
 ]

@@ -6,7 +6,7 @@ from pathlib import Path
 from typing import Optional
 import hashlib
 
-from src.models.documents import Document, ParseResult
+from ..models.documents import Document, ParseResult
 
 
 class BaseParser(ABC):

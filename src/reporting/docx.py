@@ -23,7 +23,7 @@ try:
 except ImportError:
     raise ImportError("python-docx is required for Word generation. Install with: pip install python-docx")
 
-from src.reporting.base import BaseReportGenerator
+from .base import BaseReportGenerator
 
 
 class DOCXReportGenerator(BaseReportGenerator):

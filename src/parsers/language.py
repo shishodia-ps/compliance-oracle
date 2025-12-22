@@ -2,10 +2,22 @@
 
 import re
 from typing import Optional, Dict
-from langdetect import detect, DetectorFactory, LangDetectException
 
-# Set seed for consistent results
-DetectorFactory.seed = 0
+# Try to import langdetect, make it optional
+try:
+    from langdetect import detect, DetectorFactory, LangDetectException
+    # Set seed for consistent results
+    DetectorFactory.seed = 0
+    LANGDETECT_AVAILABLE = True
+except ImportError:
+    LANGDETECT_AVAILABLE = False
+    # Define placeholder exception
+    class LangDetectException(Exception):
+        pass
+    def detect(text: str) -> str:
+        """Fallback detect function when langdetect not available."""
+        # Basic fallback - assume English
+        return "en"
 
 
 # Language-specific patterns for enhanced detection

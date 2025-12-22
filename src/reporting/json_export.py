@@ -14,7 +14,7 @@ from typing import List, Dict
 from datetime import datetime
 import json
 
-from src.reporting.base import BaseReportGenerator
+from .base import BaseReportGenerator
 
 
 class JSONExporter(BaseReportGenerator):

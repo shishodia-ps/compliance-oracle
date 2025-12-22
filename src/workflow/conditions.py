@@ -7,7 +7,7 @@ current state and decide which node to execute next.
 """
 
 from typing import Literal
-from src.workflow.state import WorkflowState
+from .state import WorkflowState
 
 
 def needs_more_retrieval(state: WorkflowState) -> Literal["retrieve_more", "analyze"]:

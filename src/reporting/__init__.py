@@ -17,11 +17,11 @@ Usage:
     pdf_bytes = generator.generate(findings, config)
 """
 
-from src.reporting.base import BaseReportGenerator
-from src.reporting.pdf import PDFReportGenerator
-from src.reporting.docx import DOCXReportGenerator
-from src.reporting.excel import ExcelReportGenerator
-from src.reporting.json_export import JSONExporter, export_to_json_file
+from .base import BaseReportGenerator
+from .pdf import PDFReportGenerator
+from .docx import DOCXReportGenerator
+from .excel import ExcelReportGenerator
+from .json_export import JSONExporter, export_to_json_file
 
 __all__ = [
     "BaseReportGenerator",

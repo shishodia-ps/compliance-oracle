@@ -4,8 +4,8 @@ import fitz  # PyMuPDF
 from typing import Optional, List, Dict
 import re
 
-from src.parsers.base import BaseParser
-from src.parsers.language import detect_language
+from .base import BaseParser
+from .language import detect_language
 
 
 class PDFParser(BaseParser):

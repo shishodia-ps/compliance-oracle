@@ -24,7 +24,7 @@ try:
 except ImportError:
     raise ImportError("openpyxl is required for Excel generation. Install with: pip install openpyxl")
 
-from src.reporting.base import BaseReportGenerator
+from .base import BaseReportGenerator
 
 
 class ExcelReportGenerator(BaseReportGenerator):
