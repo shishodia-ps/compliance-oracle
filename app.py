@@ -1,103 +1,138 @@
 """
 Compliance Oracle v3.0 - Main Application Entry Point
+=====================================================
 
-This is a placeholder. The full implementation will be built using Claude Code.
+Streamlit application for AI-powered regulatory compliance gap analysis.
+
+Features:
+- Multi-format document support (PDF, DOCX, HTML, TXT)
+- Multilingual support (EN, DE, FR, NL, LU)
+- Agentic RAG workflow
+- Professional reporting (PDF, DOCX, Excel, JSON)
 """
 
 import streamlit as st
+from datetime import datetime
+import sys
+from pathlib import Path
 
-# Page config
-st.set_page_config(
-    page_title="Compliance Oracle v3.0",
-    page_icon="⚖️",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
+# Add project root to path
+project_root = Path(__file__).parent
+sys.path.insert(0, str(project_root))
 
-# Placeholder UI
-st.title("⚖️ Compliance Oracle v3.0")
-st.markdown("**Agentic AI-powered regulatory compliance gap analysis**")
+# Import UI components
+from ui.styles import get_custom_css
+from ui.pages.home import render_home_page
 
-st.info("""
-## 🚧 Under Construction
 
-This application is being built using the specifications in `docs/SPECIFICATION.md`.
+def main():
+    """
+    Main application entry point.
+    """
+    # Page configuration
+    st.set_page_config(
+        page_title="Compliance Oracle v3.0",
+        page_icon="⚖️",
+        layout="wide",
+        initial_sidebar_state="expanded",
+        menu_items={
+            'Get Help': 'https://github.com/yourusername/compliance-oracle',
+            'Report a bug': 'https://github.com/yourusername/compliance-oracle/issues',
+            'About': """
+            # Compliance Oracle v3.0
 
-### To complete the build:
+            AI-Powered Regulatory Compliance Gap Analysis
 
-1. **Using Claude Code (Recommended):**
-   ```bash
-   cd compliance-oracle
-   claude-code
-   ```
-   Then ask Claude Code to implement the system following `CLAUDE_INSTRUCTIONS.md`
+            Built with:
+            - Streamlit
+            - LangChain & LangGraph
+            - OpenAI / Anthropic
+            - ChromaDB
 
-2. **Manual build:**
-   - Follow the implementation phases in the specification
-   - Build each module according to the project structure
-
-### Current Status:
-- ✅ Project structure created
-- ✅ Configuration files ready (`src/config/`)
-- ⏳ Document parsers (pending)
-- ⏳ Agents (pending)
-- ⏳ Workflow (pending)
-- ⏳ UI components (pending)
-
-### Quick Test:
-```bash
-# Install dependencies
-pip install -r requirements.txt
-
-# Run this placeholder
-streamlit run app.py
-```
-""")
-
-# Show configuration status
-st.subheader("Configuration Status")
-
-col1, col2 = st.columns(2)
-
-with col1:
-    st.markdown("**✅ Ready:**")
-    st.markdown("""
-    - `src/config/settings.py` - App settings
-    - `src/config/keywords.py` - Multilingual keywords
-    - `src/config/models.py` - LLM model registry
-    - `src/config/jurisdictions.py` - Jurisdiction registry
-    """)
-
-with col2:
-    st.markdown("**⏳ To Build:**")
-    st.markdown("""
-    - `src/parsers/` - Document parsers
-    - `src/agents/` - Agentic components
-    - `src/workflow/` - LangGraph workflow
-    - `ui/` - UI components
-    """)
-
-# Test configuration import
-st.subheader("Configuration Test")
-try:
-    from src.config import (
-        get_settings,
-        get_all_domains,
-        get_all_providers,
-        get_all_jurisdictions
+            © 2024 EY
+            """
+        }
     )
-    
-    settings = get_settings()
-    
-    st.success("✅ Configuration loaded successfully!")
-    
-    st.markdown(f"""
-    - **Domains available:** {', '.join(get_all_domains())}
-    - **Providers available:** {', '.join(get_all_providers())}
-    - **Jurisdictions available:** {', '.join(get_all_jurisdictions())}
-    - **Default model:** {settings.default_model}
-    """)
-    
-except ImportError as e:
-    st.error(f"❌ Configuration import failed: {e}")
-    st.markdown("Make sure you're running from the project root directory.")
+
+    # Inject custom CSS
+    st.markdown(get_custom_css(), unsafe_allow_html=True)
+
+    # Initialize session state
+    _initialize_session_state()
+
+    # Render main page
+    render_home_page()
+
+    # Footer
+    _render_footer()
+
+
+def _initialize_session_state():
+    """
+    Initialize session state variables.
+    """
+    # Page routing
+    if "page" not in st.session_state:
+        st.session_state.page = "upload"
+
+    # Workflow state
+    if "workflow_state" not in st.session_state:
+        st.session_state.workflow_state = None
+
+    # Upload results
+    if "upload_result" not in st.session_state:
+        st.session_state.upload_result = None
+
+    # Configuration
+    if "config" not in st.session_state:
+        st.session_state.config = None
+
+    # Findings
+    if "findings" not in st.session_state:
+        st.session_state.findings = None
+
+    # Analysis metadata
+    if "analysis_started_at" not in st.session_state:
+        st.session_state.analysis_started_at = None
+
+    if "analysis_completed_at" not in st.session_state:
+        st.session_state.analysis_completed_at = None
+
+    # Confirmation flags
+    if "confirm_cancel" not in st.session_state:
+        st.session_state.confirm_cancel = False
+
+
+def _render_footer():
+    """
+    Render application footer.
+    """
+    st.markdown("---")
+
+    col1, col2, col3 = st.columns([2, 1, 2])
+
+    with col1:
+        st.markdown("""
+        <div style="color: #6c757d; font-size: 0.85rem;">
+            <strong>Compliance Oracle v3.0</strong><br>
+            AI-Powered Regulatory Compliance Gap Analysis
+        </div>
+        """, unsafe_allow_html=True)
+
+    with col2:
+        st.markdown(f"""
+        <div style="text-align: center; color: #6c757d; font-size: 0.85rem;">
+            © {datetime.now().year} EY
+        </div>
+        """, unsafe_allow_html=True)
+
+    with col3:
+        st.markdown("""
+        <div style="text-align: right; color: #6c757d; font-size: 0.85rem;">
+            Built with LangChain, LangGraph & Streamlit
+        </div>
+        """, unsafe_allow_html=True)
+
+
+if __name__ == "__main__":
+    main()
