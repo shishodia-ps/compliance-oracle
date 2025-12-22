@@ -15,10 +15,9 @@ from typing import Optional, Dict, Tuple
 from pathlib import Path
 import tempfile
 from src.config.settings import Settings
-from src.parsers.pdf_parser import PDFParser
-from src.parsers.docx_parser import DOCXParser
-from src.parsers.text_parser import PlainTextParser
-from src.parsers.language_detector import detect_language
+from src.parsers.pdf import PDFParser
+from src.parsers.docx import DOCXParser
+from src.parsers.language import detect_language
 
 
 # Supported file extensions
@@ -414,7 +413,10 @@ def _detect_document_language(file_path: str, file_type: str) -> Optional[str]:
         elif "word" in file_type or file_type.endswith("docx"):
             parser = DOCXParser()
         else:
-            parser = PlainTextParser()
+            # For plain text, just read the file directly
+            with open(file_path, 'r', encoding='utf-8') as f:
+                sample_text = f.read(1000)
+            return detect_language(sample_text)
 
         # Parse document
         document = parser.parse(file_path)

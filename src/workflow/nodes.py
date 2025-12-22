@@ -10,7 +10,7 @@ from typing import Dict, Any
 import logging
 from datetime import datetime
 
-from src.workflow.state import (
+from .state import (
     WorkflowState,
     add_log,
     add_error,
@@ -20,15 +20,15 @@ from src.workflow.state import (
     increment_validation_iteration,
     move_to_next_requirement,
 )
-from src.parsers.pdf_parser import PDFParser
-from src.parsers.docx_parser import DOCXParser
-from src.parsers.structure_extractor import StructureExtractor
-from src.agents.requirement_extractor import RequirementExtractorAgent
-from src.agents.query_agent import QueryAgent
-from src.agents.retrieval_agent import RetrievalAgent
-from src.agents.analysis_agent import AnalysisAgent
-from src.agents.validation_agent import ValidationAgent
-from src.models.documents import Document
+from ..parsers.pdf import PDFParser
+from ..parsers.docx import DOCXParser
+from ..parsers.structure import StructureExtractor
+from ..agents.requirement_extractor import RequirementExtractorAgent
+from ..agents.query_agent import QueryAgent
+from ..agents.retrieval_agent import RetrievalAgent
+from ..agents.analysis_agent import AnalysisAgent
+from ..agents.validation_agent import ValidationAgent
+from ..models.documents import Document
 
 logger = logging.getLogger(__name__)
 

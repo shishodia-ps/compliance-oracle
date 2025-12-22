@@ -42,8 +42,8 @@ import logging
 from datetime import datetime
 from typing import Optional
 from langgraph.graph import StateGraph, END
-from src.workflow.state import WorkflowState, create_initial_state
-from src.workflow.nodes import (
+from .state import WorkflowState, create_initial_state
+from .nodes import (
     parse_documents,
     extract_requirements,
     understand_query,
@@ -52,7 +52,7 @@ from src.workflow.nodes import (
     validate_finding,
     aggregate_findings,
 )
-from src.workflow.conditions import (
+from .conditions import (
     needs_more_retrieval,
     has_more_requirements,
     route_after_validation,

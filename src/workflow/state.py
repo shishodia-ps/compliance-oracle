@@ -6,9 +6,9 @@ analysis workflow as it progresses through the LangGraph nodes.
 """
 
 from typing import TypedDict, List, Dict, Any, Optional
-from src.models.documents import Document
-from src.models.requirements import Requirement
-from src.models.findings import Finding
+from ..models.documents import Document
+from ..models.requirements import Requirement
+from ..models.findings import Finding
 
 
 class WorkflowState(TypedDict, total=False):

@@ -1,7 +1,53 @@
 """Pydantic models for compliance findings."""
 
 from typing import List, Optional, Dict, Literal
+from enum import Enum
 from pydantic import BaseModel, Field
+
+
+class ComplianceStatus(str, Enum):
+    """Compliance status enum."""
+    COMPLIANT = "compliant"
+    PARTIAL_GAP = "partial_gap"
+    GAP = "gap"
+    CONTRADICTION = "contradiction"
+    UNCERTAIN = "uncertain"
+
+
+class Severity(str, Enum):
+    """Severity level enum."""
+    CRITICAL = "critical"
+    HIGH = "high"
+    MEDIUM = "medium"
+    LOW = "low"
+
+
+class PolicySection(BaseModel):
+    """A section from the policy document."""
+    section_id: str = Field(..., description="Section identifier")
+    title: str = Field(..., description="Section title")
+    content: str = Field(..., description="Section content")
+    page_number: Optional[int] = Field(None, description="Page number")
+    relevance_score: float = Field(..., ge=0.0, le=1.0, description="Relevance score")
+
+
+class RetrievalResult(BaseModel):
+    """Result from retrieving relevant policy sections."""
+    requirement_id: str = Field(..., description="Requirement ID")
+    policy_sections: List[PolicySection] = Field(default_factory=list, description="Retrieved sections")
+    total_sections_found: int = Field(default=0, description="Total sections found")
+    retrieval_strategy: str = Field(..., description="Strategy used for retrieval")
+    metadata: Dict = Field(default_factory=dict, description="Additional metadata")
+
+
+class ValidationResult(BaseModel):
+    """Result from validating a finding."""
+    finding_id: str = Field(..., description="Finding ID")
+    is_valid: bool = Field(..., description="Whether the finding is valid")
+    validation_notes: List[str] = Field(default_factory=list, description="Validation notes")
+    updated_confidence: Optional[float] = Field(None, ge=0.0, le=1.0, description="Updated confidence score")
+    updated_status: Optional[str] = Field(None, description="Updated status")
+    metadata: Dict = Field(default_factory=dict, description="Additional metadata")
 
 
 class ReasoningStep(BaseModel):

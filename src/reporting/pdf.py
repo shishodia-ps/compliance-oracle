@@ -34,7 +34,7 @@ try:
 except ImportError:
     raise ImportError("ReportLab is required for PDF generation. Install with: pip install reportlab")
 
-from src.reporting.base import BaseReportGenerator
+from .base import BaseReportGenerator
 
 
 # EY Brand Colors (RGB 0-1 scale)

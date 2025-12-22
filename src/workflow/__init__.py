@@ -12,13 +12,13 @@ Main components:
 - ComplianceWorkflowRunner: High-level interface for running the workflow
 """
 
-from src.workflow.state import (
+from .state import (
     WorkflowState,
     create_initial_state,
     add_log,
     add_error,
 )
-from src.workflow.graph import (
+from .graph import (
     create_compliance_workflow,
     ComplianceWorkflowRunner,
     run_compliance_analysis,

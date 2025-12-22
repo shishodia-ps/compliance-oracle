@@ -12,7 +12,7 @@ except ImportError:
     CHROMADB_AVAILABLE = False
 
 from .embedding import EmbeddingService
-from ..models.documents import Section, Chunk
+from ..models.documents import DocumentSection as Section, DocumentChunk as Chunk
 
 
 logger = structlog.get_logger()
