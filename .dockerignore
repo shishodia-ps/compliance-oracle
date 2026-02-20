@@ -1,0 +1,48 @@
+# Build cache - never copy these
+.next
+.next/cache
+
+# Dependencies
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Testing
+coverage
+.nyc_output
+
+# Environment files (use env vars instead)
+.env.local
+.env.development
+.env.test
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs
+*.log
+
+# Git
+.git
+.gitignore
+
+# CI/CD configs not needed in image
+.github
+.gitlab-ci.yml
+
+# Documentation
+README.md
+CHANGELOG.md
+*.md
+
+# Local data
+data/*.json
+!data/.gitkeep

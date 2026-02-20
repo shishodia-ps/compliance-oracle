@@ -1,0 +1,22 @@
+# Core dependencies
+redis>=5.0.0
+psycopg2-binary>=2.9.0
+python-dotenv>=1.0.0
+
+# LlamaCloud for document parsing (EU: api.cloud.eu.llamaindex.ai)
+llama-cloud>=0.1.0
+llama-parse>=0.4.0
+
+# Moonshot AI for summaries, clauses, and Q&A
+# Install via: pip install openai (Moonshot uses OpenAI-compatible API)
+openai>=1.0.0
+
+# PageIndex dependencies
+tiktoken>=0.7.0
+pyyaml>=6.0.1
+PyPDF2>=3.0.0
+pymupdf>=1.23.0
+
+# Utilities
+tenacity>=8.0.0
+tqdm>=4.65.0

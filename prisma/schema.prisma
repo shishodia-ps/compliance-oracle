@@ -1,0 +1,1010 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  ADMIN
+  MANAGER
+  REVIEWER
+  VIEWER
+}
+
+enum MatterStatus {
+  ACTIVE
+  PENDING
+  CLOSED
+  ARCHIVED
+}
+
+enum DocumentStatus {
+  UPLOADED
+  PROCESSING
+  ANALYZED
+  ERROR
+}
+
+enum DocumentType {
+  CONTRACT
+  POLICY
+  AGREEMENT
+  MEMO
+  EMAIL_EXPORT
+  INVOICE
+  OTHER
+}
+
+enum RiskSeverity {
+  LOW
+  MEDIUM
+  HIGH
+  CRITICAL
+}
+
+enum RiskStatus {
+  OPEN
+  ACKNOWLEDGED
+  MITIGATED
+  CLOSED
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String  @map("user_id")
+  type              String
+  provider          String
+  providerAccountId String  @map("provider_account_id")
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+  @@map("accounts")
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique @map("session_token")
+  userId       String   @map("user_id")
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("sessions")
+}
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String    @unique
+  emailVerified DateTime? @map("email_verified")
+  image         String?
+  password      String?
+  role          UserRole  @default(VIEWER)
+  createdAt     DateTime  @default(now()) @map("created_at")
+  updatedAt     DateTime  @updatedAt @map("updated_at")
+
+  accounts             Account[]
+  sessions             Session[]
+  memberships          OrganizationMember[]
+  createdMatters       Matter[]
+  auditLogs            AuditLog[]
+  chatSessions         ChatSession[]
+  assignedRisks        Risk[]
+  notificationSettings NotificationSettings?
+  searchQueries        SearchQuery[]
+  citationReviews      CitationRecord[]
+  documentShares       DocumentShare[]
+  adverseMediaChecks   AdverseMediaCheck[]
+  uploadedInvoices     Invoice[] @relation("uploadedInvoices")
+  reviewedInvoices     Invoice[] @relation("reviewedInvoices")
+  reviewedRiskFlags    InvoiceRiskFlag[]
+
+  @@map("users")
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+  @@map("verificationtokens")
+}
+
+model Organization {
+  id          String   @id @default(cuid())
+  name        String
+  slug        String   @unique
+  description String?
+  website     String?
+  logo        String?
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  members            OrganizationMember[]
+  matters            Matter[]
+  documents          Document[]
+  auditLogs          AuditLog[]
+  compliance         ComplianceFramework[]
+  adverseMediaChecks AdverseMediaCheck[]
+  invoices           Invoice[]
+  vendors            Vendor[]
+
+  @@map("organizations")
+}
+
+model OrganizationMember {
+  id             String   @id @default(cuid())
+  userId         String   @map("user_id")
+  organizationId String   @map("organization_id")
+  role           UserRole @default(VIEWER)
+  joinedAt       DateTime @default(now()) @map("joined_at")
+
+  user         User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  organization Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, organizationId])
+  @@index([userId])
+  @@index([organizationId])
+  @@map("organization_members")
+}
+
+model Matter {
+  id             String       @id @default(cuid())
+  name           String
+  description    String?
+  status         MatterStatus @default(ACTIVE)
+  priority       String       @default("medium")
+  tags           String[]
+  dueDate        DateTime?    @map("due_date")
+  organizationId String       @map("organization_id")
+  createdById    String       @map("created_by_id")
+  createdAt      DateTime     @default(now()) @map("created_at")
+  updatedAt      DateTime     @updatedAt @map("updated_at")
+
+  organization Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  createdBy    User         @relation(fields: [createdById], references: [id], onDelete: Cascade)
+  documents    Document[]
+  tasks        Task[]
+  pipelineJobs PipelineJob[]
+
+  @@index([organizationId])
+  @@map("matters")
+}
+
+model Document {
+  id             String         @id @default(cuid())
+  name           String
+  fileName       String         @map("file_name")
+  fileType       String         @map("file_type")
+  fileSize       Int            @map("file_size")
+  storageKey     String         @map("storage_key")
+  status         DocumentStatus @default(UPLOADED)
+  documentType   DocumentType   @default(OTHER)
+  organizationId String         @map("organization_id")
+  matterId       String?        @map("matter_id")
+  
+  // Queue tracking
+  processingJobId   String?   @map("processing_job_id")
+  processingStage     String?   @map("processing_stage") // UPLOADED, EXTRACTING, INDEXING, ANALYZING
+  processingProgress  Float?    @map("processing_progress") @default(0) // 0-100
+  processingError     String?   @map("processing_error") @db.Text
+  processedAt         DateTime? @map("processed_at")
+  
+  createdAt      DateTime       @default(now()) @map("created_at")
+  updatedAt      DateTime       @updatedAt @map("updated_at")
+
+  organization    Organization      @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  matter          Matter?           @relation(fields: [matterId], references: [id], onDelete: SetNull)
+  extractions     Extraction[]
+  risks           Risk[]
+  chatSessions    ChatSession[]
+  versions        DocumentVersion[]
+  searchChunks    SearchChunk[]
+  extractionData  DocumentExtraction?
+  summary         DocumentSummary?
+  shares          DocumentShare[]
+  pageIndexTree   PageIndexTree?
+  invoice         Invoice?
+
+  @@index([organizationId])
+  @@index([matterId])
+  @@index([status])
+  @@index([organizationId, status])
+  @@map("documents")
+}
+
+model DocumentVersion {
+  id         String   @id @default(cuid())
+  documentId String   @map("document_id")
+  version    Int
+  storageKey String   @map("storage_key")
+  fileSize   Int      @map("file_size")
+  changeLog  String?  @map("change_log")
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  document Document @relation(fields: [documentId], references: [id], onDelete: Cascade)
+
+  @@unique([documentId, version])
+  @@map("document_versions")
+}
+
+model DocumentShare {
+  id           String    @id @default(cuid())
+  documentId   String    @map("document_id")
+  createdById  String    @map("created_by_id")
+  shareToken   String    @unique @map("share_token")
+  expiresAt    DateTime  @map("expires_at")
+  canDownload  Boolean   @default(true) @map("can_download")
+  accessCount  Int       @default(0) @map("access_count")
+  lastAccessed DateTime? @map("last_accessed")
+  createdAt    DateTime  @default(now()) @map("created_at")
+
+  document Document @relation(fields: [documentId], references: [id], onDelete: Cascade)
+  createdBy User   @relation(fields: [createdById], references: [id], onDelete: Cascade)
+
+  @@index([shareToken])
+  @@index([documentId])
+  @@map("document_shares")
+}
+
+model Extraction {
+  id           String   @id @default(cuid())
+  documentId   String   @map("document_id")
+  clauseType   String   @map("clause_type")
+  content      String
+  pageNumber   Int?     @map("page_number")
+  paragraphRef String?  @map("paragraph_ref")
+  confidence   Float
+  reviewed     Boolean  @default(false)
+  createdAt    DateTime @default(now()) @map("created_at")
+
+  document Document @relation(fields: [documentId], references: [id], onDelete: Cascade)
+
+  @@index([documentId])
+  @@map("extractions")
+}
+
+model Risk {
+  id             String     @id @default(cuid())
+  documentId     String     @map("document_id")
+  title          String
+  description    String
+  severity       RiskSeverity
+  status         RiskStatus @default(OPEN)
+  clauseRef      String?    @map("clause_ref")
+  pageNumber     Int?       @map("page_number")
+  assignedToId   String?    @map("assigned_to_id")
+  mitigationPlan String?    @map("mitigation_plan")
+  createdAt      DateTime   @default(now()) @map("created_at")
+  updatedAt      DateTime   @updatedAt @map("updated_at")
+
+  document   Document @relation(fields: [documentId], references: [id], onDelete: Cascade)
+  assignedTo User?    @relation(fields: [assignedToId], references: [id], onDelete: SetNull)
+
+  @@index([documentId])
+  @@index([documentId, status])
+  @@map("risks")
+}
+
+model ChatSession {
+  id         String   @id @default(cuid())
+  documentId String   @map("document_id")
+  userId     String   @map("user_id")
+  title      String?
+  createdAt  DateTime @default(now()) @map("created_at")
+  updatedAt  DateTime @updatedAt @map("updated_at")
+
+  document Document @relation(fields: [documentId], references: [id], onDelete: Cascade)
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  messages Message[]
+
+  @@index([documentId])
+  @@index([userId])
+  @@map("chat_sessions")
+}
+
+model Message {
+  id            String   @id @default(cuid())
+  chatSessionId String   @map("chat_session_id")
+  role          String
+  content       String
+  citations     Json?
+  createdAt     DateTime @default(now()) @map("created_at")
+
+  chatSession ChatSession @relation(fields: [chatSessionId], references: [id], onDelete: Cascade)
+
+  @@index([chatSessionId])
+  @@map("messages")
+}
+
+model Task {
+  id          String    @id @default(cuid())
+  matterId    String    @map("matter_id")
+  title       String
+  description String?
+  status      String    @default("pending")
+  priority    String    @default("medium")
+  dueDate     DateTime? @map("due_date")
+  completedAt DateTime? @map("completed_at")
+  createdAt   DateTime  @default(now()) @map("created_at")
+  updatedAt   DateTime  @updatedAt @map("updated_at")
+
+  matter Matter @relation(fields: [matterId], references: [id], onDelete: Cascade)
+
+  @@map("tasks")
+}
+
+model AuditLog {
+  id             String   @id @default(cuid())
+  userId         String   @map("user_id")
+  organizationId String?  @map("organization_id")
+  action         String
+  resourceType   String   @map("resource_type")
+  resourceId     String?  @map("resource_id")
+  details        Json?
+  ipAddress      String?  @map("ip_address")
+  userAgent      String?  @map("user_agent")
+  viewedAt       DateTime? @map("viewed_at")
+  createdAt      DateTime @default(now()) @map("created_at")
+
+  user         User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  organization Organization? @relation(fields: [organizationId], references: [id], onDelete: SetNull)
+
+  @@index([userId])
+  @@index([organizationId])
+  @@index([createdAt])
+  @@index([organizationId, createdAt])
+  @@map("audit_logs")
+}
+
+model ComplianceFramework {
+  id             String   @id @default(cuid())
+  organizationId String   @map("organization_id")
+  name           String
+  description    String?
+  requirements   Json?
+  createdAt      DateTime @default(now()) @map("created_at")
+  updatedAt      DateTime @updatedAt @map("updated_at")
+
+  organization Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+
+  @@map("compliance_frameworks")
+}
+
+model NotificationSettings {
+  id                      String  @id @default(cuid())
+  userId                  String  @unique @map("user_id")
+  emailNotifications      Boolean @default(true) @map("email_notifications")
+  riskAlerts              Boolean @default(true) @map("risk_alerts")
+  documentProcessedAlerts Boolean @default(true) @map("document_processed_alerts")
+  weeklyDigest            Boolean @default(true) @map("weekly_digest")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("notification_settings")
+}
+
+// ============================================
+// LEGAL AI PIPELINE MODELS
+// ============================================
+
+// Pipeline Job Status
+enum PipelineJobStatus {
+  PENDING
+  RUNNING
+  COMPLETED
+  FAILED
+  CANCELLED
+}
+
+// Pipeline Step
+enum PipelineStep {
+  IDLE
+  EXTRACT
+  INDEX
+  ENRICH
+  MERGE
+  COMPLETE
+  ERROR
+}
+
+// Artifact Type
+enum ArtifactType {
+  PARSE_JSON
+  TREE_JSON
+  MASTER_JSON
+  LOG
+}
+
+// Pipeline Job
+model PipelineJob {
+  id          String           @id @default(cuid())
+  orgId       String           @map("org_id")
+  matterId    String           @map("matter_id")
+  status      PipelineJobStatus
+  step        PipelineStep
+  progress    Float            @default(0)
+  documentIds String[]         @map("document_ids")
+  options     Json?
+  startedAt   DateTime?        @map("started_at")
+  finishedAt  DateTime?        @map("finished_at")
+  error       String?
+  logPath     String?          @map("log_path")
+  createdAt   DateTime         @default(now()) @map("created_at")
+  updatedAt   DateTime         @updatedAt @map("updated_at")
+
+  artifacts PipelineArtifact[]
+  matter    Matter             @relation(fields: [matterId], references: [id], onDelete: Cascade)
+
+  @@index([orgId])
+  @@index([matterId])
+  @@index([status])
+  @@map("pipeline_jobs")
+}
+
+// Pipeline Artifact
+model PipelineArtifact {
+  id        String      @id @default(cuid())
+  jobId     String      @map("job_id")
+  orgId     String      @map("org_id")
+  matterId  String      @map("matter_id")
+  type      ArtifactType
+  path      String
+  hash      String?
+  size      Int?
+  createdAt DateTime    @default(now()) @map("created_at")
+
+  job PipelineJob @relation(fields: [jobId], references: [id], onDelete: Cascade)
+
+  @@index([jobId])
+  @@index([matterId])
+  @@index([type])
+  @@map("pipeline_artifacts")
+}
+
+// Document Index Status
+model DocumentIndex {
+  id            String    @id @default(cuid())
+  documentId    String    @unique @map("document_id")
+  matterId      String    @map("matter_id")
+  parsePath     String?   @map("parse_path")
+  treePath      String?   @map("tree_path")
+  hash          String?
+  indexedAt     DateTime? @map("indexed_at")
+  modelUsed     String?   @map("model_used")
+  createdAt     DateTime  @default(now()) @map("created_at")
+  updatedAt     DateTime  @updatedAt @map("updated_at")
+
+  searchChunks SearchChunk[]
+
+  @@index([matterId])
+  @@index([documentId])
+  @@map("document_indexes")
+}
+
+// PageIndex tree storage for hierarchical document structure
+model PageIndexTree {
+  id          String   @id @default(cuid())
+  documentId  String   @unique @map("document_id")
+  treeData    Json     @map("tree_data")
+  metadata    Json?
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  document Document @relation(fields: [documentId], references: [id], onDelete: Cascade)
+
+  @@index([documentId])
+  @@map("pageindex_trees")
+}
+
+// ============================================
+// LEGAL SEARCH ENGINE MODELS
+// ============================================
+
+// Search Chunk - normalized document segments for search
+model SearchChunk {
+  id              String    @id @default(cuid())
+  documentId      String    @map("document_id")
+  matterId        String    @map("matter_id")
+  orgId           String    @map("org_id")
+  chunkId         String    @map("chunk_id") // Original ID from PageIndex
+  parentChunkId   String?   @map("parent_chunk_id")
+  
+  // Location info
+  page            Int?
+  sectionPath     String    @map("section_path") // e.g., "2.1 Liability → Limitation"
+  sectionNumber   String?   @map("section_number") // e.g., "2.1"
+  
+  // Content
+  text            String    @db.Text
+  textVector      Unsupported("tsvector") @map("text_vector")
+  embedding       Float[]   // pgvector - for semantic search (empty array if not generated)
+  
+  // Metadata
+  chunkType       String    @default("paragraph") @map("chunk_type") // clause, section, paragraph
+  clauseType      String?   @map("clause_type") // termination, indemnity, payment, etc.
+  language        String    @default("unknown") // NL, EN, detected
+  
+  // Structural
+  level           Int       @default(0) // Hierarchy level
+  path            String[]  // Full path array for tree traversal
+  sectionDepth    Int?      @map("section_depth")  // Depth in tree hierarchy
+  parentTitles    String[]  @map("parent_titles")   // Ancestor node titles for scoring
+  
+  // Source tracking
+  treeNodeId      String?   @map("tree_node_id")
+  hash            String    // Content hash for versioning
+  pipelineVersion String    @default("1.0.0") @map("pipeline_version")
+  
+  // Timestamps
+  createdAt       DateTime  @default(now()) @map("created_at")
+  updatedAt       DateTime  @updatedAt @map("updated_at")
+  
+  // Relations
+  document        Document  @relation(fields: [documentId], references: [id], onDelete: Cascade, map: "search_chunks_document_fkey")
+  documentIndex   DocumentIndex @relation(fields: [documentId], references: [documentId], onDelete: Cascade, map: "search_chunks_doc_index_fkey")
+  citations       CitationRecord[]
+  
+  @@index([matterId])
+  @@index([documentId])
+  @@index([chunkId])
+  @@index([clauseType])
+  @@index([language])
+  @@index([sectionPath])
+  @@index([textVector])
+  @@index([embedding])
+  @@map("search_chunks")
+}
+
+// Search Query - query history for analytics
+model SearchQuery {
+  id          String    @id @default(cuid())
+  userId      String    @map("user_id")
+  matterId    String?   @map("matter_id")
+  orgId       String?   @map("org_id")
+  
+  queryText   String    @map("query_text")
+  queryType   String    @default("hybrid") @map("query_type") // keyword, semantic, hybrid, structural
+  filters     Json?     // Applied filters
+  
+  resultCount Int       @default(0) @map("result_count")
+  executionMs Int?      @map("execution_ms")
+  
+  createdAt   DateTime  @default(now()) @map("created_at")
+  
+  // Relations
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  citations   CitationRecord[]
+  
+  @@index([userId])
+  @@index([matterId])
+  @@index([createdAt])
+  @@map("search_queries")
+}
+
+// Citation Record - every citation tracked
+model CitationRecord {
+  id              String    @id @default(cuid())
+  
+  // Source
+  queryId         String?   @map("query_id")
+  messageId       String?   @map("message_id")
+  chunkId         String    @map("chunk_id")
+  documentId      String    @map("document_id")
+  
+  // Citation data
+  page            Int?
+  sectionPath     String    @map("section_path")
+  quote           String    @db.Text // Exact quoted text
+  startOffset     Int       @map("start_offset")
+  endOffset       Int       @map("end_offset")
+  
+  // Relevance
+  relevanceScore  Float     @map("relevance_score")
+  matchType       String    @map("match_type") // semantic, keyword, structural
+  rank            Int       @default(0)
+  
+  // Review workflow
+  reviewStatus    String    @default("pending") @map("review_status") // pending, approved, rejected, commented
+  reviewedById    String?   @map("reviewed_by_id")
+  reviewedAt      DateTime? @map("reviewed_at")
+  reviewComment   String?   @map("review_comment")
+  
+  createdAt       DateTime  @default(now()) @map("created_at")
+  
+  // Relations
+  searchQuery     SearchQuery? @relation(fields: [queryId], references: [id], onDelete: SetNull)
+  searchChunk     SearchChunk @relation(fields: [chunkId], references: [id], onDelete: Cascade)
+  reviewedBy      User?       @relation(fields: [reviewedById], references: [id], onDelete: SetNull)
+  
+  @@index([queryId])
+  @@index([messageId])
+  @@index([chunkId])
+  @@index([documentId])
+  @@index([reviewStatus])
+  @@map("citation_records")
+}
+
+// ============================================
+// DOCUMENT PROCESSING MODELS
+// ============================================
+
+// Full document extraction from LlamaCloud
+model DocumentExtraction {
+  id          String   @id @default(cuid())
+  documentId  String   @unique @map("document_id")
+  content     String   @db.Text
+  markdown    String   @db.Text
+  items       Json?    // Structured items from LlamaCloud
+  metadata    Json?    // Extraction metadata
+  extractedAt DateTime @map("extracted_at")
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  document Document @relation(fields: [documentId], references: [id], onDelete: Cascade)
+
+  @@map("document_extractions")
+}
+
+// AI-generated document summary
+model DocumentSummary {
+  id          String   @id @default(cuid())
+  documentId  String   @unique @map("document_id")
+  summary     String   @db.Text
+  keyPoints   String[] @map("key_points") // Array of key points
+  risks       Json?    // Detected risks summary
+  metadata    Json?    // Processing metadata
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  document Document @relation(fields: [documentId], references: [id], onDelete: Cascade)
+
+  @@map("document_summaries")
+}
+
+
+// ============================================
+// ADVERSE MEDIA CHECK (Third-Party Due Diligence)
+// ============================================
+
+model AdverseMediaCheck {
+  id              String    @id @default(cuid())
+  userId          String    @map("user_id")
+  organizationId  String    @map("organization_id")
+  
+  // Input
+  inputType       String    @map("input_type") // single, document, bulk
+  rawInput        String    @map("raw_input")  // company name or document text
+  
+  // Status
+  status          String    @default("pending") // pending, processing, completed, error
+  
+  // Results (stored as JSON for flexibility)
+  results         Json?     // Array of company results
+  riskScore       Int?      @map("risk_score") // 0-100 aggregated
+  
+  // Audit
+  createdAt       DateTime  @default(now()) @map("created_at")
+  completedAt     DateTime? @map("completed_at")
+  
+  user            User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  organization    Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  entities        AdverseMediaEntity[]
+  
+  @@index([userId])
+  @@index([organizationId])
+  @@index([createdAt])
+  @@index([status])
+  @@map("adverse_media_checks")
+}
+
+model AdverseMediaEntity {
+  id              String    @id @default(cuid())
+  checkId         String    @map("check_id")
+  
+  // Entity info
+  name            String
+  normalizedName  String    @map("normalized_name")
+  jurisdiction    String?   // Country/region
+  industry        String?
+  registrationNum String?   @map("registration_num")
+  
+  // Match confidence
+  matchConfidence Float     @map("match_confidence") // 0-1
+  matchReasoning  String?   @map("match_reasoning") @db.Text
+  
+  // Risk assessment
+  riskScore       Int       // 0-100
+  riskCategory    String    @map("risk_category") // High, Medium, Low
+  
+  // Findings breakdown
+  findings        Json      // Array of findings by category
+  sanctionsCount  Int       @default(0) @map("sanctions_count")
+  regulatoryCount Int       @default(0) @map("regulatory_count")
+  newsCount       Int       @default(0) @map("news_count")
+  webCount        Int       @default(0) @map("web_count")
+  
+  // Source URLs (for audit trail)
+  sources         Json?     // Array of source metadata
+  
+  // Raw data cache (expires per ADVERSE_MEDIA_RETENTION_DAYS)
+  rawCache        Json?     @map("raw_cache")
+  cacheExpiresAt  DateTime? @map("cache_expires_at")
+  
+  // Monitoring (optional)
+  isMonitored     Boolean   @default(false) @map("is_monitored")
+  lastMonitoredAt DateTime? @map("last_monitored_at")
+  
+  check           AdverseMediaCheck @relation(fields: [checkId], references: [id], onDelete: Cascade)
+  
+  @@index([checkId])
+  @@index([normalizedName])
+  @@index([riskScore])
+  @@index([cacheExpiresAt])
+  @@map("adverse_media_entities")
+}
+
+// ============================================
+// INVOICE INTELLIGENCE MODELS
+// ============================================
+
+enum InvoiceStatus {
+  UPLOADED
+  PARSING
+  EXTRACTED
+  CLASSIFIED
+  ANALYZED
+  ERROR
+}
+
+enum ExpenseCategory {
+  TRAVEL
+  HOTEL
+  FOOD
+  CLIENT_ENTERTAINMENT
+  OFFICE_SUPPLIES
+  SOFTWARE
+  TRANSPORT
+  MEDICAL
+  OTHER
+}
+
+enum ReimbursementStatus {
+  APPROVED
+  REJECTED
+  NEEDS_REVIEW
+  PENDING
+}
+
+enum RiskLevel {
+  LOW
+  MEDIUM
+  HIGH
+  CRITICAL
+}
+
+// Main invoice model
+model Invoice {
+  id              String    @id @default(cuid())
+  organizationId  String    @map("organization_id")
+  uploadedById    String    @map("uploaded_by_id")
+  
+  // Document reference (links to existing document pipeline)
+  documentId      String?   @unique @map("document_id")
+  
+  // Core extracted fields
+  vendorName      String?   @map("vendor_name")
+  vendorId        String?   @map("vendor_id") // Link to vendor table
+  invoiceNumber   String?   @map("invoice_number")
+  invoiceDate     DateTime? @map("invoice_date")
+  dueDate         DateTime? @map("due_date")
+  
+  // Financial
+  amount          Float?
+  currency        String    @default("EUR")
+  taxAmount       Float?    @map("tax_amount")
+  vatRate         Float?    @map("vat_rate")
+  total           Float?
+  
+  // Classification
+  category        ExpenseCategory? @default(OTHER)
+  expenseType     String?   @map("expense_type")
+  
+  // Location
+  city            String?
+  country         String?
+  
+  // Employee info
+  employeeName    String?   @map("employee_name")
+  employeeId      String?   @map("employee_id")
+  businessPurpose String?   @map("business_purpose") @db.Text
+  
+  // Reimbursement
+  reimbursable    ReimbursementStatus @default(PENDING)
+  reimbursementReason String? @map("reimbursement_reason") @db.Text
+  reviewedById    String?   @map("reviewed_by_id")
+  reviewedAt      DateTime? @map("reviewed_at")
+  
+  // Risk & flags
+  riskScore       Int       @default(0) @map("risk_score") // 0-100
+  riskLevel       RiskLevel @default(LOW) @map("risk_level")
+  
+  // Status
+  status          InvoiceStatus @default(UPLOADED)
+  processingError String?   @map("processing_error") @db.Text
+  
+  // Raw extraction data
+  rawExtraction   Json?     @map("raw_extraction")
+  
+  // File info
+  fileName        String    @map("file_name")
+  fileType        String    @map("file_type")
+  fileSize        Int       @map("file_size")
+  storageKey      String    @map("storage_key")
+  
+  // Timestamps
+  createdAt       DateTime  @default(now()) @map("created_at")
+  updatedAt       DateTime  @updatedAt @map("updated_at")
+  processedAt     DateTime? @map("processed_at")
+  
+  // Relations
+  organization    Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  uploadedBy      User      @relation(fields: [uploadedById], references: [id], onDelete: Cascade, name: "uploadedInvoices")
+  document        Document? @relation(fields: [documentId], references: [id], onDelete: SetNull)
+  reviewedBy      User?     @relation(fields: [reviewedById], references: [id], onDelete: SetNull, name: "reviewedInvoices")
+  vendor          Vendor?   @relation(fields: [vendorId], references: [id], onDelete: SetNull)
+  lineItems       InvoiceLineItem[]
+  riskFlags       InvoiceRiskFlag[]
+  relatedRiskFlags InvoiceRiskFlag[] @relation("relatedRiskFlags")
+  duplicateOf     Invoice?  @relation("DuplicateInvoices", fields: [duplicateOfId], references: [id])
+  duplicates      Invoice[] @relation("DuplicateInvoices")
+  duplicateOfId   String?   @map("duplicate_of_id")
+  
+  @@index([organizationId])
+  @@index([uploadedById])
+  @@index([vendorId])
+  @@index([vendorName])
+  @@index([invoiceDate])
+  @@index([category])
+  @@index([reimbursable])
+  @@index([riskLevel])
+  @@index([status])
+  @@index([createdAt])
+  @@map("invoices")
+}
+
+// Invoice line items
+model InvoiceLineItem {
+  id          String  @id @default(cuid())
+  invoiceId   String  @map("invoice_id")
+  
+  description String  @db.Text
+  quantity    Float?
+  unitPrice   Float?  @map("unit_price")
+  amount      Float?
+  taxRate     Float?  @map("tax_rate")
+  category    ExpenseCategory @default(OTHER)
+  
+  invoice     Invoice @relation(fields: [invoiceId], references: [id], onDelete: Cascade)
+  
+  @@index([invoiceId])
+  @@map("invoice_line_items")
+}
+
+// Vendor master data
+model Vendor {
+  id              String    @id @default(cuid())
+  organizationId  String    @map("organization_id")
+  
+  name            String
+  normalizedName  String    @map("normalized_name")
+  category        ExpenseCategory @default(OTHER)
+  
+  // Vendor details
+  address         String?
+  city            String?
+  country         String?
+  vatNumber       String?   @map("vat_number")
+  
+  // Risk profile
+  riskScore       Int       @default(0) @map("risk_score")
+  riskLevel       RiskLevel @default(LOW) @map("risk_level")
+  isTrusted       Boolean   @default(false) @map("is_trusted")
+  isBlocked       Boolean   @default(false) @map("is_blocked")
+  
+  // Statistics
+  invoiceCount    Int       @default(0) @map("invoice_count")
+  totalAmount     Float     @default(0) @map("total_amount")
+  firstSeen       DateTime? @map("first_seen")
+  lastSeen        DateTime? @map("last_seen")
+  
+  // Auto-classification rules
+  autoCategory    ExpenseCategory? @map("auto_category")
+  classificationKeywords Json? @map("classification_keywords")
+  
+  createdAt       DateTime  @default(now()) @map("created_at")
+  updatedAt       DateTime  @updatedAt @map("updated_at")
+  
+  organization    Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  invoices        Invoice[]
+  
+  @@unique([organizationId, normalizedName])
+  @@index([organizationId])
+  @@index([normalizedName])
+  @@index([category])
+  @@index([riskLevel])
+  @@map("vendors")
+}
+
+// Risk flags for forensic analysis
+model InvoiceRiskFlag {
+  id          String    @id @default(cuid())
+  invoiceId   String    @map("invoice_id")
+  
+  flagType    String    @map("flag_type") // duplicate, weekend, alcohol, policy_violation, outlier, split_expense
+  severity    RiskLevel @default(MEDIUM)
+  title       String
+  description String    @db.Text
+  
+  // Evidence
+  evidence    Json?     // Structured evidence data
+  relatedInvoiceId String? @map("related_invoice_id")
+  
+  // Status
+  isReviewed  Boolean   @default(false) @map("is_reviewed")
+  reviewedById String?  @map("reviewed_by_id")
+  reviewedAt  DateTime? @map("reviewed_at")
+  reviewNote  String?   @map("review_note") @db.Text
+  
+  createdAt   DateTime  @default(now()) @map("created_at")
+  
+  invoice     Invoice   @relation(fields: [invoiceId], references: [id], onDelete: Cascade)
+  relatedInvoice Invoice? @relation(fields: [relatedInvoiceId], references: [id], onDelete: SetNull, name: "relatedRiskFlags")
+  reviewedBy  User?     @relation(fields: [reviewedById], references: [id], onDelete: SetNull)
+  
+  @@index([invoiceId])
+  @@index([flagType])
+  @@index([severity])
+  @@index([isReviewed])
+  @@map("invoice_risk_flags")
+}
+
+// Employee expense summary (for analytics)
+model EmployeeExpenseSummary {
+  id              String    @id @default(cuid())
+  organizationId  String    @map("organization_id")
+  employeeId      String    @map("employee_id")
+  employeeName    String    @map("employee_name")
+  
+  // Monthly stats
+  month           String    // YYYY-MM format
+  invoiceCount    Int       @default(0) @map("invoice_count")
+  totalAmount     Float     @default(0) @map("total_amount")
+  
+  // By category
+  categoryBreakdown Json?   @map("category_breakdown")
+  
+  // Risk
+  highRiskCount   Int       @default(0) @map("high_risk_count")
+  rejectedCount   Int       @default(0) @map("rejected_count")
+  
+  createdAt       DateTime  @default(now()) @map("created_at")
+  updatedAt       DateTime  @updatedAt @map("updated_at")
+  
+  @@unique([organizationId, employeeId, month])
+  @@index([organizationId])
+  @@index([employeeId])
+  @@index([month])
+  @@map("employee_expense_summaries")
+}

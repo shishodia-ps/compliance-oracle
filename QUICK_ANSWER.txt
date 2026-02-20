@@ -1,0 +1,111 @@
+QUICK REFERENCE: IS IT REAL OR MOCK?
+================================================================================
+
+YES, THIS APP GENERATES REAL OUTPUT
+────────────────────────────────────
+
+When you upload an invoice and click "Analyze":
+✓ Moonshot AI (kimi-k2.5) ACTUALLY extracts:
+  - Vendor name
+  - Invoice number
+  - Dates, amounts, details
+  - Performs policy checks
+  - Calculates risk scores
+  - Returns real JSON data
+
+When you compare policies:
+✓ Moonshot AI ACTUALLY analyzes:
+  - Company policy vs benchmark
+  - Identifies gaps
+  - Recommends changes
+  - Returns detailed comparison
+
+When you ask questions about documents:
+✓ Moonshot AI ACTUALLY:
+  - Searches document content
+  - Finds relevant passages
+  - Generates answers in real-time
+  - Streams responses to your browser
+
+
+WHY YOU MIGHT THINK IT'S MOCK
+───────────────────────────────
+
+1. Document Processing Workers
+   - Background jobs queue created ✓
+   - But workers NOT auto-started ⚠️
+   - Need to manually run Python scripts
+   - Until then, documents stay in "processing"
+
+2. Missing Features
+   - Adverse media screening: Queued but not processed
+   - API keys: UI only, no backend
+   - Webhooks: Schema but no implementation
+
+3. First-Time Setup
+   - Needs MOONSHOT_API_KEY environment variable
+   - Needs LLAMA_CLOUD_API_KEY for PDF processing
+   - Needs PostgreSQL + Redis running
+   - Needs auth configured
+
+
+CORE FEATURES ARE NOT MOCK
+────────────────────────────────
+
+✓ Invoice Analysis    → 100% Real (Moonshot API calls)
+✓ Policy Comparison   → 100% Real (Moonshot API calls)
+✓ Document Q&A        → 100% Real (Moonshot API calls)
+✓ Advanced Search     → 100% Real (Moonshot API calls)
+✓ Risk Detection      → Real with caching (Moonshot AI)
+✓ Admin Stats         → Real (Database queries)
+
+These generate actual outputs, not placeholders!
+
+
+OPTIONAL FEATURES THAT AREN'T DONE
+────────────────────────────────────
+
+✗ Adverse Media Scanning (not implemented)
+✗ API Key Management (UI only)
+✗ Webhooks (schema only)
+✗ Automated Worker Processing (disabled by default)
+
+
+DEPENDENCIES
+─────────────
+
+For FULL functionality, you need:
+
+1. Environment Variables (.env)
+   MOONSHOT_API_KEY=your_key_here
+   LLAMA_CLOUD_API_KEY=your_key_here
+   DATABASE_URL=postgresql://...
+   REDIS_URL=redis://...
+
+2. Running Services
+   - PostgreSQL (can use Docker)
+   - Redis (can use Docker)
+   - Node.js app (npm run dev)
+
+3. Optional for full pipeline
+   - Python worker: python workers/document_processor.py
+   - Python pipeline: python workers/pipeline_runner.py
+
+
+BOTTOM LINE
+────────────
+
+This is NOT a mock application!
+
+Core invoice, policy, and search features ARE calling real AI.
+They WILL generate real outputs when properly configured.
+
+What IS missing:
+- Automated background processing (workers need manual start)
+- Advanced screening features (adverse media not built)
+- Some UI features without backend (API keys, webhooks)
+
+Start with invoice/policy comparison/Q&A → these work immediately
+Then set up workers for document processing pipeline
+
+================================================================================
