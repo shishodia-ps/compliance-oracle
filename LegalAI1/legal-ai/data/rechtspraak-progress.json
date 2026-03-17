@@ -1,0 +1,61 @@
+{
+  "completed": [
+    "ECLI:NL:HR:2019:1284",
+    "ECLI:NL:HR:2015:3014",
+    "ECLI:NL:HR:2013:180",
+    "ECLI:NL:HR:2020:1986",
+    "ECLI:NL:HR:2015:3015",
+    "ECLI:NL:HR:2013:181",
+    "ECLI:NL:HR:2021:612",
+    "ECLI:NL:RVS:2018:3962",
+    "ECLI:NL:RVS:2017:3036",
+    "ECLI:NL:CRVB:2019:3591",
+    "ECLI:NL:RVS:2020:1686",
+    "ECLI:NL:RVS:2021:661",
+    "ECLI:NL:HR:2020:1987",
+    "ECLI:NL:GHAMS:2019:4231",
+    "ECLI:NL:HR:2018:1896",
+    "ECLI:NL:CRVB:2020:1687",
+    "ECLI:NL:HR:2019:1286",
+    "ECLI:NL:HR:2018:1897",
+    "ECLI:NL:HR:2017:3037",
+    "ECLI:NL:HR:2021:614",
+    "ECLI:NL:HR:2020:1688",
+    "ECLI:NL:HR:2018:1898",
+    "ECLI:NL:HR:2019:1287",
+    "ECLI:NL:HR:2020:1988",
+    "ECLI:NL:HR:2021:615",
+    "ECLI:NL:HR:2022:1234",
+    "ECLI:NL:HR:2020:1989",
+    "ECLI:NL:HR:2021:616",
+    "ECLI:NL:HR:2014:3176",
+    "ECLI:NL:HR:2019:1285",
+    "ECLI:NL:HR:2016:1997",
+    "ECLI:NL:GHAMS:2021:613"
+  ],
+  "failed": [
+    "ECLI:NL:HR:2014:3176",
+    "ECLI:NL:HR:2019:1285",
+    "ECLI:NL:HR:2016:1997",
+    "ECLI:NL:GHAMS:2021:613",
+    "ECLI:NL:HR:2014:3176",
+    "ECLI:NL:HR:2019:1285",
+    "ECLI:NL:HR:2016:1997",
+    "ECLI:NL:GHAMS:2021:613"
+  ],
+  "inProgress": null,
+  "lastUpdated": "2026-02-21T15:16:51.057Z",
+  "stats": {
+    "totalNodes": 160,
+    "byRechtsgebied": {
+      "CIVIEL_RECHT": 5,
+      "STRAFRECHT": 5,
+      "BESTUURSRECHT": 5,
+      "ARBEIDSRECHT": 5,
+      "FISCAAL_RECHT": 5,
+      "EUROPEES_RECHT": 5,
+      "OVERIG": 2
+    },
+    "citationsFound": 0
+  }
+}

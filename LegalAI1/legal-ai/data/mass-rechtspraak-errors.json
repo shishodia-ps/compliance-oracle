@@ -1,0 +1,2502 @@
+[
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6761",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6761: 403 Forbidden",
+    "timestamp": "2026-02-27T15:11:56.654Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6786",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6786: 403 Forbidden",
+    "timestamp": "2026-02-27T15:11:57.937Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6789",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6789: 403 Forbidden",
+    "timestamp": "2026-02-27T15:11:59.809Z"
+  },
+  {
+    "ecli": "ECLI:NL:TGZRAMS:2024:193",
+    "error": "Error: Failed to fetch case ECLI:NL:TGZRAMS:2024:193: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:00.925Z"
+  },
+  {
+    "ecli": "ECLI:NL:CBB:2024:671",
+    "error": "Error: Failed to fetch case ECLI:NL:CBB:2024:671: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:01.892Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9545",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9545: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:02.949Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9551",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9551: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:04.191Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9555",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9555: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:05.154Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOBR:2024:4537",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOBR:2024:4537: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:06.114Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:5079",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:5079: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:06.472Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:5085",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:5085: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:07.233Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHARL:2024:6118",
+    "error": "Error: Failed to fetch case ECLI:NL:GHARL:2024:6118: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:08.384Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:5090",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:5090: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:09.352Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHARL:2024:6135",
+    "error": "Error: Failed to fetch case ECLI:NL:GHARL:2024:6135: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:10.707Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6645",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6645: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:11.763Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9603",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9603: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:12.497Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHAMS:2024:2741",
+    "error": "Error: Failed to fetch case ECLI:NL:GHAMS:2024:2741: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:13.662Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNNE:2024:3816",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNNE:2024:3816: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:14.963Z"
+  },
+  {
+    "ecli": "ECLI:NL:RVS:2024:3984",
+    "error": "Error: Failed to fetch case ECLI:NL:RVS:2024:3984: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:15.697Z"
+  },
+  {
+    "ecli": "ECLI:NL:RVS:2024:3970",
+    "error": "Error: Failed to fetch case ECLI:NL:RVS:2024:3970: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:16.024Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:15791",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:15791: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:18.957Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:15643",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:15643: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:22.132Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:15642",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:15642: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:22.503Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6797",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6797: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:23.504Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6817",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6817: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:24.457Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNNE:2024:3788",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNNE:2024:3788: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:25.352Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6823",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6823: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:26.656Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6659",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6659: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:27.684Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6666",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6666: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:28.587Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBMNE:2024:5680",
+    "error": "Error: Failed to fetch case ECLI:NL:RBMNE:2024:5680: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:29.803Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHARL:2024:6154",
+    "error": "Error: Failed to fetch case ECLI:NL:GHARL:2024:6154: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:30.849Z"
+  },
+  {
+    "ecli": "ECLI:NL:TGZCTG:2024:155",
+    "error": "Error: Failed to fetch case ECLI:NL:TGZCTG:2024:155: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:31.718Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHARL:2024:6161",
+    "error": "Error: Failed to fetch case ECLI:NL:GHARL:2024:6161: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:32.951Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:10137",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNHO:2024:10137: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:34.032Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHARL:2024:6175",
+    "error": "Error: Failed to fetch case ECLI:NL:GHARL:2024:6175: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:34.859Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHARL:2024:6172",
+    "error": "Error: Failed to fetch case ECLI:NL:GHARL:2024:6172: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:35.203Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNNE:2024:3894",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNNE:2024:3894: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:36.157Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:15879",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:15879: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:38.055Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6724",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6724: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:41.187Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9415",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9415: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:44.379Z"
+  },
+  {
+    "ecli": "ECLI:NL:RVS:2024:3920",
+    "error": "Error: Failed to fetch case ECLI:NL:RVS:2024:3920: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:45.699Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9587",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9587: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:47.547Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9597",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9597: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:48.884Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOBR:2024:4560",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOBR:2024:4560: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:50.735Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6859",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6859: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:52.913Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9629",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9629: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:54.035Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9639",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9639: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:56.412Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9642",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9642: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:57.177Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHSHE:2024:3102",
+    "error": "Error: Failed to fetch case ECLI:NL:GHSHE:2024:3102: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:58.466Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:15838",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:15838: 403 Forbidden",
+    "timestamp": "2026-02-27T15:12:59.544Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:15840",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:15840: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:00.436Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHARL:2024:6187",
+    "error": "Error: Failed to fetch case ECLI:NL:GHARL:2024:6187: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:09.881Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:15265",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:15265: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:12.271Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBAMS:2024:5990",
+    "error": "Error: Failed to fetch case ECLI:NL:RBAMS:2024:5990: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:13.050Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:15829",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:15829: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:15.323Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:15834",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:15834: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:16.256Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9634",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9634: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:17.476Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6873",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6873: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:18.649Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:15908",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:15908: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:19.520Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:15915",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:15915: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:20.657Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:15927",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:15927: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:21.649Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6878",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6878: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:22.713Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:15945",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:15945: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:24.030Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6896",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6896: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:25.969Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6738",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6738: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:29.155Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6744",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6744: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:30.363Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:10205",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNHO:2024:10205: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:31.519Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6753",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6753: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:32.404Z"
+  },
+  {
+    "ecli": "ECLI:NL:TGZRAMS:2024:198",
+    "error": "Error: Failed to fetch case ECLI:NL:TGZRAMS:2024:198: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:33.517Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6935",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6935: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:34.736Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:5121",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:5121: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:35.533Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:10220",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNHO:2024:10220: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:35.869Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:10229",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNHO:2024:10229: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:36.867Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:5125",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:5125: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:37.991Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:5130",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:5130: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:38.757Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:5137",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:5137: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:39.878Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16021",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16021: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:40.964Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6777",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6777: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:41.955Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16026",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16026: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:43.281Z"
+  },
+  {
+    "ecli": "ECLI:NL:TGDKG:2024:104",
+    "error": "Error: Failed to fetch case ECLI:NL:TGDKG:2024:104: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:45.171Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16061",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16061: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:48.418Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHAMS:2024:2767",
+    "error": "Error: Failed to fetch case ECLI:NL:GHAMS:2024:2767: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:48.752Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHAMS:2024:2775",
+    "error": "Error: Failed to fetch case ECLI:NL:GHAMS:2024:2775: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:50.972Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16074",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16074: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:51.930Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16085",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16085: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:55.082Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:10275",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNHO:2024:10275: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:58.271Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9503",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9503: 403 Forbidden",
+    "timestamp": "2026-02-27T15:13:59.618Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOBR:2024:4598",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOBR:2024:4598: 403 Forbidden",
+    "timestamp": "2026-02-27T15:14:00.678Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6946",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6946: 403 Forbidden",
+    "timestamp": "2026-02-27T15:14:01.485Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9711",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9711: 403 Forbidden",
+    "timestamp": "2026-02-27T15:14:04.668Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6978",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6978: 403 Forbidden",
+    "timestamp": "2026-02-27T15:14:05.851Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHARL:2024:6196",
+    "error": "Error: Failed to fetch case ECLI:NL:GHARL:2024:6196: 403 Forbidden",
+    "timestamp": "2026-02-27T15:14:07.779Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHARL:2024:6195",
+    "error": "Error: Failed to fetch case ECLI:NL:GHARL:2024:6195: 403 Forbidden",
+    "timestamp": "2026-02-27T15:14:08.152Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6796",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6796: 403 Forbidden",
+    "timestamp": "2026-02-27T15:14:08.978Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:5164",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:5164: 403 Forbidden",
+    "timestamp": "2026-02-27T15:14:10.189Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6994",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6994: 403 Forbidden",
+    "timestamp": "2026-02-27T15:14:11.042Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16145",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16145: 403 Forbidden",
+    "timestamp": "2026-02-27T15:14:14.321Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16151",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16151: 403 Forbidden",
+    "timestamp": "2026-02-27T15:14:17.518Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9677",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9677: 403 Forbidden",
+    "timestamp": "2026-02-27T15:14:18.860Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9678",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9678: 403 Forbidden",
+    "timestamp": "2026-02-27T15:14:20.782Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16212",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16212: 403 Forbidden",
+    "timestamp": "2026-02-27T15:14:24.193Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16237",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16237: 403 Forbidden",
+    "timestamp": "2026-02-27T15:14:27.448Z"
+  },
+  {
+    "ecli": "ECLI:NL:CBB:2024:685",
+    "error": "Error: Failed to fetch case ECLI:NL:CBB:2024:685: 403 Forbidden",
+    "timestamp": "2026-02-27T15:14:30.703Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16278",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16278: 403 Forbidden",
+    "timestamp": "2026-02-27T15:14:33.057Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16288",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16288: 403 Forbidden",
+    "timestamp": "2026-02-27T15:14:33.958Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16326",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16326: 403 Forbidden",
+    "timestamp": "2026-02-27T15:14:40.394Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:7012",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:7012: 403 Forbidden",
+    "timestamp": "2026-02-27T15:14:43.620Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9668",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9668: 403 Forbidden",
+    "timestamp": "2026-02-27T15:14:46.786Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6781",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6781: 403 Forbidden",
+    "timestamp": "2026-02-27T15:14:47.878Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6990",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6990: 403 Forbidden",
+    "timestamp": "2026-02-27T15:14:49.859Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:7005",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:7005: 403 Forbidden",
+    "timestamp": "2026-02-27T15:14:51.025Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6810",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6810: 403 Forbidden",
+    "timestamp": "2026-02-27T15:14:52.990Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOBR:2024:4630",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOBR:2024:4630: 403 Forbidden",
+    "timestamp": "2026-02-27T15:14:56.133Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:5176",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:5176: 403 Forbidden",
+    "timestamp": "2026-02-27T15:14:57.290Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:5181",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:5181: 403 Forbidden",
+    "timestamp": "2026-02-27T15:14:58.229Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:7026",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:7026: 403 Forbidden",
+    "timestamp": "2026-02-27T15:14:59.220Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHAMS:2024:2797",
+    "error": "Error: Failed to fetch case ECLI:NL:GHAMS:2024:2797: 403 Forbidden",
+    "timestamp": "2026-02-27T15:15:02.213Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6839",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6839: 403 Forbidden",
+    "timestamp": "2026-02-27T15:15:03.415Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHARL:2024:6230",
+    "error": "Error: Failed to fetch case ECLI:NL:GHARL:2024:6230: 403 Forbidden",
+    "timestamp": "2026-02-27T15:15:04.447Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:15760",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:15760: 403 Forbidden",
+    "timestamp": "2026-02-27T15:15:05.379Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6844",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6844: 403 Forbidden",
+    "timestamp": "2026-02-27T15:15:06.559Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16332",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16332: 403 Forbidden",
+    "timestamp": "2026-02-27T15:15:08.515Z"
+  },
+  {
+    "ecli": "ECLI:NL:RVS:2024:4058",
+    "error": "Error: Failed to fetch case ECLI:NL:RVS:2024:4058: 403 Forbidden",
+    "timestamp": "2026-02-27T15:15:11.702Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9614",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9614: 403 Forbidden",
+    "timestamp": "2026-02-27T15:15:14.926Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:5212",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:5212: 403 Forbidden",
+    "timestamp": "2026-02-27T15:15:18.147Z"
+  },
+  {
+    "ecli": "ECLI:NL:CRVB:2024:1849",
+    "error": "Error: Failed to fetch case ECLI:NL:CRVB:2024:1849: 403 Forbidden",
+    "timestamp": "2026-02-27T15:15:21.542Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:7093",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:7093: 403 Forbidden",
+    "timestamp": "2026-02-27T15:15:22.755Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9574",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9574: 403 Forbidden",
+    "timestamp": "2026-02-27T15:15:24.738Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:15807",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:15807: 403 Forbidden",
+    "timestamp": "2026-02-27T15:15:25.064Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBMNE:2024:5740",
+    "error": "Error: Failed to fetch case ECLI:NL:RBMNE:2024:5740: 403 Forbidden",
+    "timestamp": "2026-02-27T15:15:26.097Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:7042",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:7042: 403 Forbidden",
+    "timestamp": "2026-02-27T15:15:27.148Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:10330",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNHO:2024:10330: 403 Forbidden",
+    "timestamp": "2026-02-27T15:15:29.204Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHARL:2024:6250",
+    "error": "Error: Failed to fetch case ECLI:NL:GHARL:2024:6250: 403 Forbidden",
+    "timestamp": "2026-02-27T15:15:30.197Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9827",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9827: 403 Forbidden",
+    "timestamp": "2026-02-27T15:15:31.208Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:7071",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:7071: 403 Forbidden",
+    "timestamp": "2026-02-27T15:15:32.234Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHSHE:2024:3158",
+    "error": "Error: Failed to fetch case ECLI:NL:GHSHE:2024:3158: 403 Forbidden",
+    "timestamp": "2026-02-27T15:15:33.486Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOBR:2024:4708",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOBR:2024:4708: 403 Forbidden",
+    "timestamp": "2026-02-27T15:15:34.395Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:10352",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNHO:2024:10352: 403 Forbidden",
+    "timestamp": "2026-02-27T15:15:35.612Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBAMS:2024:6137",
+    "error": "Error: Failed to fetch case ECLI:NL:RBAMS:2024:6137: 403 Forbidden",
+    "timestamp": "2026-02-27T15:15:36.764Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6902",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6902: 403 Forbidden",
+    "timestamp": "2026-02-27T15:15:37.635Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16420",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16420: 403 Forbidden",
+    "timestamp": "2026-02-27T15:15:40.811Z"
+  },
+  {
+    "ecli": "ECLI:NL:CRVB:2024:1887",
+    "error": "Error: Failed to fetch case ECLI:NL:CRVB:2024:1887: 403 Forbidden",
+    "timestamp": "2026-02-27T15:15:43.996Z"
+  },
+  {
+    "ecli": "ECLI:NL:CRVB:2024:1885",
+    "error": "Error: Failed to fetch case ECLI:NL:CRVB:2024:1885: 403 Forbidden",
+    "timestamp": "2026-02-27T15:15:45.282Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:10389",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNHO:2024:10389: 403 Forbidden",
+    "timestamp": "2026-02-27T15:15:47.354Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOBR:2024:4711",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOBR:2024:4711: 403 Forbidden",
+    "timestamp": "2026-02-27T15:15:50.475Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16469",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16469: 403 Forbidden",
+    "timestamp": "2026-02-27T15:15:53.660Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHAMS:2024:2822",
+    "error": "Error: Failed to fetch case ECLI:NL:GHAMS:2024:2822: 403 Forbidden",
+    "timestamp": "2026-02-27T15:15:56.969Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9733",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9733: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:00.132Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9740",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9740: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:01.368Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9832",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9832: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:02.520Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBAMS:2024:6132",
+    "error": "Error: Failed to fetch case ECLI:NL:RBAMS:2024:6132: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:03.300Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOBR:2024:4716",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOBR:2024:4716: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:04.619Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:7098",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:7098: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:05.670Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOBR:2024:4720",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOBR:2024:4720: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:06.441Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHARL:2024:6273",
+    "error": "Error: Failed to fetch case ECLI:NL:GHARL:2024:6273: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:07.783Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6868",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6868: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:08.867Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6875",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6875: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:09.625Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHARL:2024:6280",
+    "error": "Error: Failed to fetch case ECLI:NL:GHARL:2024:6280: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:10.945Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9882",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9882: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:12.834Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:7123",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:7123: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:13.163Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6888",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6888: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:14.162Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16486",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16486: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:15.050Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16497",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16497: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:16.031Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNNE:2024:3994",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNNE:2024:3994: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:19.219Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNNE:2024:3998",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNNE:2024:3998: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:21.695Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHAMS:2024:2799",
+    "error": "Error: Failed to fetch case ECLI:NL:GHAMS:2024:2799: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:22.514Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:5215",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:5215: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:23.756Z"
+  },
+  {
+    "ecli": "ECLI:NL:TGZRSHE:2024:103",
+    "error": "Error: Failed to fetch case ECLI:NL:TGZRSHE:2024:103: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:25.994Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16546",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16546: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:29.168Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16563",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16563: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:32.360Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9580",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9580: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:35.405Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16193",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16193: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:36.675Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9756",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9756: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:37.706Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:10312",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNHO:2024:10312: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:38.539Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16399",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16399: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:39.855Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9880",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9880: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:40.873Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBAMS:2024:6175",
+    "error": "Error: Failed to fetch case ECLI:NL:RBAMS:2024:6175: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:41.771Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:7157",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:7157: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:44.041Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:7162",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:7162: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:44.871Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9928",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9928: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:47.214Z"
+  },
+  {
+    "ecli": "ECLI:NL:TGZRAMS:2024:199",
+    "error": "Error: Failed to fetch case ECLI:NL:TGZRAMS:2024:199: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:48.021Z"
+  },
+  {
+    "ecli": "ECLI:NL:TGZRAMS:2024:202",
+    "error": "Error: Failed to fetch case ECLI:NL:TGZRAMS:2024:202: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:49.157Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6934",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6934: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:50.269Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6939",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6939: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:51.162Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:15979",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:15979: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:54.340Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16578",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16578: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:55.645Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBZWB:2024:6939",
+    "error": "Error: Failed to fetch case ECLI:NL:RBZWB:2024:6939: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:56.635Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:10147",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNHO:2024:10147: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:57.560Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6957",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6957: 403 Forbidden",
+    "timestamp": "2026-02-27T15:16:58.835Z"
+  },
+  {
+    "ecli": "ECLI:NL:TGZRSHE:2024:106",
+    "error": "Error: Failed to fetch case ECLI:NL:TGZRSHE:2024:106: 403 Forbidden",
+    "timestamp": "2026-02-27T15:17:00.721Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16620",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16620: 403 Forbidden",
+    "timestamp": "2026-02-27T15:17:03.954Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBZWB:2024:6875",
+    "error": "Error: Failed to fetch case ECLI:NL:RBZWB:2024:6875: 403 Forbidden",
+    "timestamp": "2026-02-27T15:17:07.436Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:5256",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:5256: 403 Forbidden",
+    "timestamp": "2026-02-27T15:17:10.581Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16638",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16638: 403 Forbidden",
+    "timestamp": "2026-02-27T15:17:11.907Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBZWB:2024:6911",
+    "error": "Error: Failed to fetch case ECLI:NL:RBZWB:2024:6911: 403 Forbidden",
+    "timestamp": "2026-02-27T15:17:12.954Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHSHE:2024:3211",
+    "error": "Error: Failed to fetch case ECLI:NL:GHSHE:2024:3211: 403 Forbidden",
+    "timestamp": "2026-02-27T15:17:13.728Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:5266",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:5266: 403 Forbidden",
+    "timestamp": "2026-02-27T15:17:15.052Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16652",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16652: 403 Forbidden",
+    "timestamp": "2026-02-27T15:17:16.919Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9652",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9652: 403 Forbidden",
+    "timestamp": "2026-02-27T15:17:19.015Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:7214",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:7214: 403 Forbidden",
+    "timestamp": "2026-02-27T15:17:20.217Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16405",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16405: 403 Forbidden",
+    "timestamp": "2026-02-27T15:17:23.358Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16516",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16516: 403 Forbidden",
+    "timestamp": "2026-02-27T15:17:25.528Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9929",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9929: 403 Forbidden",
+    "timestamp": "2026-02-27T15:17:26.426Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6910",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6910: 403 Forbidden",
+    "timestamp": "2026-02-27T15:17:27.602Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:10474",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNHO:2024:10474: 403 Forbidden",
+    "timestamp": "2026-02-27T15:17:29.628Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16607",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16607: 403 Forbidden",
+    "timestamp": "2026-02-27T15:17:30.881Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHARL:2024:6323",
+    "error": "Error: Failed to fetch case ECLI:NL:GHARL:2024:6323: 403 Forbidden",
+    "timestamp": "2026-02-27T15:17:32.898Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:5272",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:5272: 403 Forbidden",
+    "timestamp": "2026-02-27T15:17:36.039Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16674",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16674: 403 Forbidden",
+    "timestamp": "2026-02-27T15:17:39.356Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16686",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16686: 403 Forbidden",
+    "timestamp": "2026-02-27T15:17:42.704Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBZWB:2024:6902",
+    "error": "Error: Failed to fetch case ECLI:NL:RBZWB:2024:6902: 403 Forbidden",
+    "timestamp": "2026-02-27T15:17:44.068Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBZWB:2024:6924",
+    "error": "Error: Failed to fetch case ECLI:NL:RBZWB:2024:6924: 403 Forbidden",
+    "timestamp": "2026-02-27T15:17:45.874Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:10544",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNHO:2024:10544: 403 Forbidden",
+    "timestamp": "2026-02-27T15:17:48.225Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHAMS:2024:2842",
+    "error": "Error: Failed to fetch case ECLI:NL:GHAMS:2024:2842: 403 Forbidden",
+    "timestamp": "2026-02-27T15:17:49.208Z"
+  },
+  {
+    "ecli": "ECLI:NL:CBB:2024:712",
+    "error": "Error: Failed to fetch case ECLI:NL:CBB:2024:712: 403 Forbidden",
+    "timestamp": "2026-02-27T15:17:52.383Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBAMS:2024:6255",
+    "error": "Error: Failed to fetch case ECLI:NL:RBAMS:2024:6255: 403 Forbidden",
+    "timestamp": "2026-02-27T15:17:55.663Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16716",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16716: 403 Forbidden",
+    "timestamp": "2026-02-27T15:17:59.024Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBAMS:2024:6281",
+    "error": "Error: Failed to fetch case ECLI:NL:RBAMS:2024:6281: 403 Forbidden",
+    "timestamp": "2026-02-27T15:18:02.307Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9783",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9783: 403 Forbidden",
+    "timestamp": "2026-02-27T15:18:03.512Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOBR:2024:4734",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOBR:2024:4734: 403 Forbidden",
+    "timestamp": "2026-02-27T15:18:04.581Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:7205",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:7205: 403 Forbidden",
+    "timestamp": "2026-02-27T15:18:05.685Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:10522",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNHO:2024:10522: 403 Forbidden",
+    "timestamp": "2026-02-27T15:18:08.869Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHARL:2024:6339",
+    "error": "Error: Failed to fetch case ECLI:NL:GHARL:2024:6339: 403 Forbidden",
+    "timestamp": "2026-02-27T15:18:11.867Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:5286",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:5286: 403 Forbidden",
+    "timestamp": "2026-02-27T15:18:14.258Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHAMS:2024:2853",
+    "error": "Error: Failed to fetch case ECLI:NL:GHAMS:2024:2853: 403 Forbidden",
+    "timestamp": "2026-02-27T15:18:15.089Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOBR:2024:4831",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOBR:2024:4831: 403 Forbidden",
+    "timestamp": "2026-02-27T15:18:18.250Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHARL:2024:6398",
+    "error": "Error: Failed to fetch case ECLI:NL:GHARL:2024:6398: 403 Forbidden",
+    "timestamp": "2026-02-27T15:18:21.475Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16493",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16493: 403 Forbidden",
+    "timestamp": "2026-02-27T15:18:25.744Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16766",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16766: 403 Forbidden",
+    "timestamp": "2026-02-27T15:18:34.525Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:7258",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:7258: 403 Forbidden",
+    "timestamp": "2026-02-27T15:18:35.677Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16777",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16777: 403 Forbidden",
+    "timestamp": "2026-02-27T15:18:37.701Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:10239",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:10239: 403 Forbidden",
+    "timestamp": "2026-02-27T15:18:40.825Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHARL:2024:6437",
+    "error": "Error: Failed to fetch case ECLI:NL:GHARL:2024:6437: 403 Forbidden",
+    "timestamp": "2026-02-27T15:18:41.159Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:5302",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:5302: 403 Forbidden",
+    "timestamp": "2026-02-27T15:18:44.257Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:5303",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:5303: 403 Forbidden",
+    "timestamp": "2026-02-27T15:18:44.589Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:10581",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNHO:2024:10581: 403 Forbidden",
+    "timestamp": "2026-02-27T15:18:45.634Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:10583",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T15:19:50.067Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:5312",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T15:19:50.434Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:10585",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T15:19:50.756Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:10587",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T15:19:51.080Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:5313",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T15:19:51.395Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:5314",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T15:19:51.718Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16789",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T15:19:52.037Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:10240",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T15:19:52.343Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16792",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T15:19:52.666Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16795",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T15:19:52.968Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBZWB:2024:6852",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T15:19:53.276Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHAMS:2024:2874",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T15:19:53.578Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHAMS:2024:2880",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T15:19:53.896Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHAMS:2024:2883",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T15:40:50.056Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHAMS:2024:2885",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T15:40:51.818Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:5295",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:5295: 403 Forbidden",
+    "timestamp": "2026-02-27T15:41:01.843Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16657",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16657: 403 Forbidden",
+    "timestamp": "2026-02-27T15:41:40.673Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOBR:2024:4823",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOBR:2024:4823: 403 Forbidden",
+    "timestamp": "2026-02-27T15:41:41.737Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBAMS:2024:6296",
+    "error": "Error: Failed to fetch case ECLI:NL:RBAMS:2024:6296: 403 Forbidden",
+    "timestamp": "2026-02-27T15:41:42.812Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:10252",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:10252: 403 Forbidden",
+    "timestamp": "2026-02-27T15:41:43.877Z"
+  },
+  {
+    "ecli": "ECLI:NL:TADRARL:2024:249",
+    "error": "Error: Failed to fetch case ECLI:NL:TADRARL:2024:249: 403 Forbidden",
+    "timestamp": "2026-02-27T15:42:51.996Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16940",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:16940: 403 Forbidden",
+    "timestamp": "2026-02-27T15:43:43.227Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHDHA:2024:1984",
+    "error": "Error: Failed to fetch case ECLI:NL:GHDHA:2024:1984: 403 Forbidden",
+    "timestamp": "2026-02-27T15:47:33.739Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:10691",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:10691: 403 Forbidden",
+    "timestamp": "2026-02-27T15:47:35.813Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:17504",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:17504: 403 Forbidden",
+    "timestamp": "2026-02-27T15:48:21.853Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:7712",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:7712: 403 Forbidden",
+    "timestamp": "2026-02-27T15:48:27.225Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHSHE:2024:3397",
+    "error": "Error: Failed to fetch case ECLI:NL:GHSHE:2024:3397: 403 Forbidden",
+    "timestamp": "2026-02-27T15:48:34.584Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:17691",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:17691: 403 Forbidden",
+    "timestamp": "2026-02-27T15:48:35.627Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:17750",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T16:01:02.549Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:7334",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T16:01:02.915Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:7738",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T16:01:03.268Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:17751",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T16:01:03.609Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:7741",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T16:01:03.941Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:17752",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T16:01:04.249Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBMNE:2024:6064",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T16:01:04.581Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBMNE:2024:6065",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T16:01:04.899Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:17753",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T16:01:05.216Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBMNE:2024:6066",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T16:01:05.528Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:17754",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T16:01:05.839Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:17756",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T16:01:06.150Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHARL:2024:6709",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T16:02:19.759Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:17757",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T16:02:20.568Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:7510",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T16:02:21.053Z"
+  },
+  {
+    "ecli": "ECLI:NL:TAHVD:2024:263",
+    "error": "Error: Failed to fetch case ECLI:NL:TAHVD:2024:263: 403 Forbidden",
+    "timestamp": "2026-02-27T16:04:20.269Z"
+  },
+  {
+    "ecli": "ECLI:NL:TADRARL:2024:261",
+    "error": "Error: Failed to fetch case ECLI:NL:TADRARL:2024:261: 403 Forbidden",
+    "timestamp": "2026-02-27T16:04:21.327Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:11612",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T16:11:02.459Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHAMS:2024:2926",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T16:11:02.814Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:10686",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T16:11:03.220Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:10688",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T16:11:03.543Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:7508",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T16:11:03.871Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHAMS:2024:3088",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T16:11:04.183Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:7517",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T16:11:04.492Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:7566",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T16:11:04.820Z"
+  },
+  {
+    "ecli": "ECLI:NL:OGHACMB:2024:218",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T16:11:05.123Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHARL:2024:6875",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T16:11:05.436Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:10982",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T16:11:05.751Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBZWB:2024:7676",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T16:11:06.065Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHSHE:2024:3093",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T17:34:13.468Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBZWB:2024:7677",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T17:34:15.304Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBZWB:2024:7678",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T17:34:15.724Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHAMS:2024:3091",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T17:34:16.100Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:18498",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T17:34:16.432Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHDHA:2024:1977",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T17:34:16.774Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:7587",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T17:34:17.107Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNNE:2024:4371",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T17:34:17.424Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:16389",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T17:34:17.745Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:17546",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T17:34:18.057Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:17872",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T17:34:18.375Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:11035",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T17:34:18.700Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:7588",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T17:34:19.015Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHAMS:2024:3092",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T17:34:19.329Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBAMS:2024:6822",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T17:34:19.631Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBMNE:2024:6209",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T17:34:19.948Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:11039",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T17:34:20.261Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:11040",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T17:34:20.572Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:7591",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T17:34:20.894Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBAMS:2024:6498",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T17:34:21.239Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNNE:2024:4374",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T17:34:21.553Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNNE:2024:4375",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T17:34:21.862Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:7333",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T17:34:22.165Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBAMS:2024:6881",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T17:34:22.468Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:11044",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T17:34:22.779Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:7716",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T17:34:23.095Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBAMS:2024:6882",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T17:34:23.447Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNNE:2024:4376",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T17:34:23.756Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:7795",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T17:34:24.071Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNNE:2024:4378",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T17:34:24.381Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNNE:2024:4382",
+    "error": "TypeError: fetch failed",
+    "timestamp": "2026-02-27T17:34:24.830Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHDHA:2024:2557",
+    "error": "Error: Failed to fetch case ECLI:NL:GHDHA:2024:2557: 403 Forbidden",
+    "timestamp": "2026-02-27T17:39:05.247Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:9829",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:9829: 403 Forbidden",
+    "timestamp": "2026-02-27T17:42:00.928Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHARL:2024:8263",
+    "error": "Error: Failed to fetch case ECLI:NL:GHARL:2024:8263: 403 Forbidden",
+    "timestamp": "2026-02-27T17:42:24.509Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:7759",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:7759: 403 Forbidden",
+    "timestamp": "2026-02-27T17:42:57.573Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:13668",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:13668: 403 Forbidden",
+    "timestamp": "2026-02-27T17:42:59.647Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:13717",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:13717: 403 Forbidden",
+    "timestamp": "2026-02-27T17:43:00.726Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOBR:2024:4099",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOBR:2024:4099: 403 Forbidden",
+    "timestamp": "2026-02-27T17:43:01.758Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:13950",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:13950: 403 Forbidden",
+    "timestamp": "2026-02-27T17:43:04.871Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:5961",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:5961: 403 Forbidden",
+    "timestamp": "2026-02-27T17:43:05.921Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:7719",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:7719: 403 Forbidden",
+    "timestamp": "2026-02-27T17:43:15.576Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:7804",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:7804: 403 Forbidden",
+    "timestamp": "2026-02-27T17:43:16.635Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:5975",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:5975: 403 Forbidden",
+    "timestamp": "2026-02-27T17:43:20.823Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:5945",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:5945: 403 Forbidden",
+    "timestamp": "2026-02-27T17:43:21.838Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:8285",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:8285: 403 Forbidden",
+    "timestamp": "2026-02-27T17:43:22.895Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHARL:2024:5590",
+    "error": "Error: Failed to fetch case ECLI:NL:GHARL:2024:5590: 403 Forbidden",
+    "timestamp": "2026-02-27T17:43:24.979Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHDHA:2024:1537",
+    "error": "Error: Failed to fetch case ECLI:NL:GHDHA:2024:1537: 403 Forbidden",
+    "timestamp": "2026-02-27T17:43:26.017Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHSHE:2024:2793",
+    "error": "Error: Failed to fetch case ECLI:NL:GHSHE:2024:2793: 403 Forbidden",
+    "timestamp": "2026-02-27T17:43:27.070Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHARL:2024:5601",
+    "error": "Error: Failed to fetch case ECLI:NL:GHARL:2024:5601: 403 Forbidden",
+    "timestamp": "2026-02-27T17:43:28.092Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHARL:2024:5632",
+    "error": "Error: Failed to fetch case ECLI:NL:GHARL:2024:5632: 403 Forbidden",
+    "timestamp": "2026-02-27T17:43:30.134Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHAMS:2024:2384",
+    "error": "Error: Failed to fetch case ECLI:NL:GHAMS:2024:2384: 403 Forbidden",
+    "timestamp": "2026-02-27T17:43:31.213Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHAMS:2024:2428",
+    "error": "Error: Failed to fetch case ECLI:NL:GHAMS:2024:2428: 403 Forbidden",
+    "timestamp": "2026-02-27T17:43:32.283Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:7724",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:7724: 403 Forbidden",
+    "timestamp": "2026-02-27T17:43:40.740Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:7825",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:7825: 403 Forbidden",
+    "timestamp": "2026-02-27T17:43:42.788Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:5958",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:5958: 403 Forbidden",
+    "timestamp": "2026-02-27T17:43:44.869Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:8295",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:8295: 403 Forbidden",
+    "timestamp": "2026-02-27T17:43:45.945Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:5984",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:5984: 403 Forbidden",
+    "timestamp": "2026-02-27T17:43:49.173Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:5989",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:5989: 403 Forbidden",
+    "timestamp": "2026-02-27T17:43:50.203Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOBR:2024:4147",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOBR:2024:4147: 403 Forbidden",
+    "timestamp": "2026-02-27T17:43:52.271Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:9143",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNHO:2024:9143: 403 Forbidden",
+    "timestamp": "2026-02-27T17:43:53.303Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6059",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6059: 403 Forbidden",
+    "timestamp": "2026-02-27T17:43:56.456Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:7733",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:7733: 403 Forbidden",
+    "timestamp": "2026-02-27T17:44:09.493Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBAMS:2024:5438",
+    "error": "Error: Failed to fetch case ECLI:NL:RBAMS:2024:5438: 403 Forbidden",
+    "timestamp": "2026-02-27T17:44:13.607Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:14082",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:14082: 403 Forbidden",
+    "timestamp": "2026-02-27T17:44:14.664Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:8579",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:8579: 403 Forbidden",
+    "timestamp": "2026-02-27T17:44:19.893Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNNE:2024:3464",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNNE:2024:3464: 403 Forbidden",
+    "timestamp": "2026-02-27T17:44:20.930Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6075",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6075: 403 Forbidden",
+    "timestamp": "2026-02-27T17:44:24.099Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:4681",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:4681: 403 Forbidden",
+    "timestamp": "2026-02-27T17:44:25.140Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:7654",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:7654: 403 Forbidden",
+    "timestamp": "2026-02-27T17:44:34.694Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:7797",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:7797: 403 Forbidden",
+    "timestamp": "2026-02-27T17:44:35.717Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:13631",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:13631: 403 Forbidden",
+    "timestamp": "2026-02-27T17:44:36.762Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:13986",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:13986: 403 Forbidden",
+    "timestamp": "2026-02-27T17:44:38.853Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:8519",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:8519: 403 Forbidden",
+    "timestamp": "2026-02-27T17:44:39.862Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:9231",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNHO:2024:9231: 403 Forbidden",
+    "timestamp": "2026-02-27T17:44:44.117Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6089",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6089: 403 Forbidden",
+    "timestamp": "2026-02-27T17:44:45.159Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOBR:2024:4177",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOBR:2024:4177: 403 Forbidden",
+    "timestamp": "2026-02-27T17:44:46.169Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOBR:2024:4182",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOBR:2024:4182: 403 Forbidden",
+    "timestamp": "2026-02-27T17:44:47.223Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:14322",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:14322: 403 Forbidden",
+    "timestamp": "2026-02-27T17:44:50.379Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:14349",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:14349: 403 Forbidden",
+    "timestamp": "2026-02-27T17:44:57.854Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:8341",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:8341: 403 Forbidden",
+    "timestamp": "2026-02-27T17:45:05.252Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:8357",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:8357: 403 Forbidden",
+    "timestamp": "2026-02-27T17:45:06.286Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:8407",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:8407: 403 Forbidden",
+    "timestamp": "2026-02-27T17:45:07.319Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:8465",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:8465: 403 Forbidden",
+    "timestamp": "2026-02-27T17:45:09.379Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:9180",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNHO:2024:9180: 403 Forbidden",
+    "timestamp": "2026-02-27T17:45:10.412Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:8653",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:8653: 403 Forbidden",
+    "timestamp": "2026-02-27T17:45:11.414Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6129",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6129: 403 Forbidden",
+    "timestamp": "2026-02-27T17:45:14.585Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:4715",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:4715: 403 Forbidden",
+    "timestamp": "2026-02-27T17:45:15.615Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:8342",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:8342: 403 Forbidden",
+    "timestamp": "2026-02-27T17:45:32.593Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:9189",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNHO:2024:9189: 403 Forbidden",
+    "timestamp": "2026-02-27T17:45:35.638Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6159",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6159: 403 Forbidden",
+    "timestamp": "2026-02-27T17:45:39.861Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:8752",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:8752: 403 Forbidden",
+    "timestamp": "2026-02-27T17:45:40.907Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6139",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6139: 403 Forbidden",
+    "timestamp": "2026-02-27T17:45:42.980Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6160",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6160: 403 Forbidden",
+    "timestamp": "2026-02-27T17:45:45.041Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:9339",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNHO:2024:9339: 403 Forbidden",
+    "timestamp": "2026-02-27T17:45:47.183Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:4734",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:4734: 403 Forbidden",
+    "timestamp": "2026-02-27T17:45:50.335Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6187",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6187: 403 Forbidden",
+    "timestamp": "2026-02-27T17:45:51.354Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:8411",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:8411: 403 Forbidden",
+    "timestamp": "2026-02-27T17:46:05.553Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:8731",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:8731: 403 Forbidden",
+    "timestamp": "2026-02-27T17:46:08.667Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6195",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6195: 403 Forbidden",
+    "timestamp": "2026-02-27T17:46:10.725Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6178",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6178: 403 Forbidden",
+    "timestamp": "2026-02-27T17:46:11.786Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6203",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6203: 403 Forbidden",
+    "timestamp": "2026-02-27T17:46:13.836Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6190",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6190: 403 Forbidden",
+    "timestamp": "2026-02-27T17:46:14.915Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBAMS:2024:5635",
+    "error": "Error: Failed to fetch case ECLI:NL:RBAMS:2024:5635: 403 Forbidden",
+    "timestamp": "2026-02-27T17:46:21.216Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:9267",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNHO:2024:9267: 403 Forbidden",
+    "timestamp": "2026-02-27T17:46:33.874Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBAMS:2024:5621",
+    "error": "Error: Failed to fetch case ECLI:NL:RBAMS:2024:5621: 403 Forbidden",
+    "timestamp": "2026-02-27T17:46:35.949Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6209",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6209: 403 Forbidden",
+    "timestamp": "2026-02-27T17:46:36.951Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6194",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6194: 403 Forbidden",
+    "timestamp": "2026-02-27T17:46:38.138Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOBR:2024:4250",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOBR:2024:4250: 403 Forbidden",
+    "timestamp": "2026-02-27T17:46:39.193Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:4765",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:4765: 403 Forbidden",
+    "timestamp": "2026-02-27T17:46:41.278Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6226",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6226: 403 Forbidden",
+    "timestamp": "2026-02-27T17:46:43.391Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:14097",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:14097: 403 Forbidden",
+    "timestamp": "2026-02-27T17:47:03.994Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOBR:2024:4206",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOBR:2024:4206: 403 Forbidden",
+    "timestamp": "2026-02-27T17:47:05.027Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:8785",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:8785: 403 Forbidden",
+    "timestamp": "2026-02-27T17:47:06.067Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBAMS:2024:5697",
+    "error": "Error: Failed to fetch case ECLI:NL:RBAMS:2024:5697: 403 Forbidden",
+    "timestamp": "2026-02-27T17:47:07.147Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOBR:2024:4272",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOBR:2024:4272: 403 Forbidden",
+    "timestamp": "2026-02-27T17:47:09.183Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6240",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6240: 403 Forbidden",
+    "timestamp": "2026-02-27T17:47:11.271Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:9444",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNHO:2024:9444: 403 Forbidden",
+    "timestamp": "2026-02-27T17:47:12.324Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6255",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6255: 403 Forbidden",
+    "timestamp": "2026-02-27T17:47:13.383Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOBR:2024:4300",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOBR:2024:4300: 403 Forbidden",
+    "timestamp": "2026-02-27T17:47:15.477Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6273",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6273: 403 Forbidden",
+    "timestamp": "2026-02-27T17:47:17.548Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6250",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6250: 403 Forbidden",
+    "timestamp": "2026-02-27T17:47:19.635Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6254",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6254: 403 Forbidden",
+    "timestamp": "2026-02-27T17:47:20.686Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHARL:2024:5806",
+    "error": "Error: Failed to fetch case ECLI:NL:GHARL:2024:5806: 403 Forbidden",
+    "timestamp": "2026-02-27T17:47:22.809Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHARL:2024:5817",
+    "error": "Error: Failed to fetch case ECLI:NL:GHARL:2024:5817: 403 Forbidden",
+    "timestamp": "2026-02-27T17:47:23.884Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:14675",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:14675: 403 Forbidden",
+    "timestamp": "2026-02-27T17:47:35.594Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:8852",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:8852: 403 Forbidden",
+    "timestamp": "2026-02-27T17:47:37.730Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6238",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6238: 403 Forbidden",
+    "timestamp": "2026-02-27T17:47:39.850Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6266",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6266: 403 Forbidden",
+    "timestamp": "2026-02-27T17:47:40.910Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9005",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9005: 403 Forbidden",
+    "timestamp": "2026-02-27T17:47:44.035Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6300",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6300: 403 Forbidden",
+    "timestamp": "2026-02-27T17:48:05.393Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHAMS:2024:2608",
+    "error": "Error: Failed to fetch case ECLI:NL:GHAMS:2024:2608: 403 Forbidden",
+    "timestamp": "2026-02-27T17:48:06.428Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHAMS:2024:2612",
+    "error": "Error: Failed to fetch case ECLI:NL:GHAMS:2024:2612: 403 Forbidden",
+    "timestamp": "2026-02-27T17:48:07.426Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHARL:2024:5860",
+    "error": "Error: Failed to fetch case ECLI:NL:GHARL:2024:5860: 403 Forbidden",
+    "timestamp": "2026-02-27T17:48:09.480Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:14727",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:14727: 403 Forbidden",
+    "timestamp": "2026-02-27T17:48:10.541Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6345",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6345: 403 Forbidden",
+    "timestamp": "2026-02-27T17:48:13.717Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHARL:2024:5886",
+    "error": "Error: Failed to fetch case ECLI:NL:GHARL:2024:5886: 403 Forbidden",
+    "timestamp": "2026-02-27T17:48:14.772Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHARL:2024:5890",
+    "error": "Error: Failed to fetch case ECLI:NL:GHARL:2024:5890: 403 Forbidden",
+    "timestamp": "2026-02-27T17:48:15.796Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6296",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6296: 403 Forbidden",
+    "timestamp": "2026-02-27T17:48:36.386Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBAMS:2024:5779",
+    "error": "Error: Failed to fetch case ECLI:NL:RBAMS:2024:5779: 403 Forbidden",
+    "timestamp": "2026-02-27T17:48:37.443Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNNE:2024:3625",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNNE:2024:3625: 403 Forbidden",
+    "timestamp": "2026-02-27T17:48:38.502Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNNE:2024:3637",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNNE:2024:3637: 403 Forbidden",
+    "timestamp": "2026-02-27T17:48:42.658Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHSHE:2024:2943",
+    "error": "Error: Failed to fetch case ECLI:NL:GHSHE:2024:2943: 403 Forbidden",
+    "timestamp": "2026-02-27T17:48:43.720Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6367",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6367: 403 Forbidden",
+    "timestamp": "2026-02-27T17:48:46.802Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6401",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6401: 403 Forbidden",
+    "timestamp": "2026-02-27T17:48:47.954Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:9628",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNHO:2024:9628: 403 Forbidden",
+    "timestamp": "2026-02-27T17:48:49.036Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9231",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9231: 403 Forbidden",
+    "timestamp": "2026-02-27T17:48:56.466Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:14725",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:14725: 403 Forbidden",
+    "timestamp": "2026-02-27T17:49:10.230Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6414",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6414: 403 Forbidden",
+    "timestamp": "2026-02-27T17:49:12.305Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHARL:2024:5913",
+    "error": "Error: Failed to fetch case ECLI:NL:GHARL:2024:5913: 403 Forbidden",
+    "timestamp": "2026-02-27T17:49:14.370Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:4853",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:4853: 403 Forbidden",
+    "timestamp": "2026-02-27T17:49:15.395Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNNE:2024:3666",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNNE:2024:3666: 403 Forbidden",
+    "timestamp": "2026-02-27T17:49:16.461Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:4890",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:4890: 403 Forbidden",
+    "timestamp": "2026-02-27T17:49:20.623Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:14554",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:14554: 403 Forbidden",
+    "timestamp": "2026-02-27T17:49:41.541Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:14635",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:14635: 403 Forbidden",
+    "timestamp": "2026-02-27T17:49:42.581Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:14715",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:14715: 403 Forbidden",
+    "timestamp": "2026-02-27T17:49:43.648Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOBR:2024:4351",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOBR:2024:4351: 403 Forbidden",
+    "timestamp": "2026-02-27T17:49:44.686Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6423",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6423: 403 Forbidden",
+    "timestamp": "2026-02-27T17:49:46.758Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:9701",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNHO:2024:9701: 403 Forbidden",
+    "timestamp": "2026-02-27T17:49:48.847Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6456",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6456: 403 Forbidden",
+    "timestamp": "2026-02-27T17:49:50.935Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6466",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6466: 403 Forbidden",
+    "timestamp": "2026-02-27T17:49:51.982Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6481",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6481: 403 Forbidden",
+    "timestamp": "2026-02-27T17:49:54.102Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:9722",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNHO:2024:9722: 403 Forbidden",
+    "timestamp": "2026-02-27T17:49:56.190Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOBR:2024:4376",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOBR:2024:4376: 403 Forbidden",
+    "timestamp": "2026-02-27T17:49:57.246Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6147",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6147: 403 Forbidden",
+    "timestamp": "2026-02-27T17:49:58.315Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBAMS:2024:5662",
+    "error": "Error: Failed to fetch case ECLI:NL:RBAMS:2024:5662: 403 Forbidden",
+    "timestamp": "2026-02-27T17:50:17.152Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBAMS:2024:5878",
+    "error": "Error: Failed to fetch case ECLI:NL:RBAMS:2024:5878: 403 Forbidden",
+    "timestamp": "2026-02-27T17:50:29.105Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6493",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6493: 403 Forbidden",
+    "timestamp": "2026-02-27T17:50:32.223Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6435",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6435: 403 Forbidden",
+    "timestamp": "2026-02-27T17:50:36.353Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHARL:2024:5983",
+    "error": "Error: Failed to fetch case ECLI:NL:GHARL:2024:5983: 403 Forbidden",
+    "timestamp": "2026-02-27T17:50:37.424Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:4919",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:4919: 403 Forbidden",
+    "timestamp": "2026-02-27T17:50:38.476Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6446",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6446: 403 Forbidden",
+    "timestamp": "2026-02-27T17:50:39.495Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:4938",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:4938: 403 Forbidden",
+    "timestamp": "2026-02-27T17:50:41.563Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOBR:2024:4405",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOBR:2024:4405: 403 Forbidden",
+    "timestamp": "2026-02-27T17:51:05.107Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6593",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6593: 403 Forbidden",
+    "timestamp": "2026-02-27T17:51:06.120Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6606",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6606: 403 Forbidden",
+    "timestamp": "2026-02-27T17:51:07.151Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9358",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9358: 403 Forbidden",
+    "timestamp": "2026-02-27T17:51:11.313Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHAMS:2024:2698",
+    "error": "Error: Failed to fetch case ECLI:NL:GHAMS:2024:2698: 403 Forbidden",
+    "timestamp": "2026-02-27T17:51:14.444Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHSHE:2024:3005",
+    "error": "Error: Failed to fetch case ECLI:NL:GHSHE:2024:3005: 403 Forbidden",
+    "timestamp": "2026-02-27T17:51:15.479Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:15201",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:15201: 403 Forbidden",
+    "timestamp": "2026-02-27T17:51:40.547Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9244",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9244: 403 Forbidden",
+    "timestamp": "2026-02-27T17:51:41.610Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:9809",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNHO:2024:9809: 403 Forbidden",
+    "timestamp": "2026-02-27T17:51:45.814Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:9815",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNHO:2024:9815: 403 Forbidden",
+    "timestamp": "2026-02-27T17:51:46.860Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHARL:2024:6041",
+    "error": "Error: Failed to fetch case ECLI:NL:GHARL:2024:6041: 403 Forbidden",
+    "timestamp": "2026-02-27T17:51:51.053Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:4962",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:4962: 403 Forbidden",
+    "timestamp": "2026-02-27T17:51:52.118Z"
+  },
+  {
+    "ecli": "ECLI:NL:GHARL:2024:6055",
+    "error": "Error: Failed to fetch case ECLI:NL:GHARL:2024:6055: 403 Forbidden",
+    "timestamp": "2026-02-27T17:51:54.227Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOBR:2024:4445",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOBR:2024:4445: 403 Forbidden",
+    "timestamp": "2026-02-27T17:52:16.382Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:4983",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:4983: 403 Forbidden",
+    "timestamp": "2026-02-27T17:52:24.843Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:4998",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:4998: 403 Forbidden",
+    "timestamp": "2026-02-27T17:52:26.934Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:5010",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:5010: 403 Forbidden",
+    "timestamp": "2026-02-27T17:52:27.991Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBROT:2024:9393",
+    "error": "Error: Failed to fetch case ECLI:NL:RBROT:2024:9393: 403 Forbidden",
+    "timestamp": "2026-02-27T17:52:58.967Z"
+  },
+  {
+    "ecli": "ECLI:NL:RVS:2024:3816",
+    "error": "Error: Failed to fetch case ECLI:NL:RVS:2024:3816: 403 Forbidden",
+    "timestamp": "2026-02-27T17:53:00.112Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBNHO:2024:9902",
+    "error": "Error: Failed to fetch case ECLI:NL:RBNHO:2024:9902: 403 Forbidden",
+    "timestamp": "2026-02-27T17:53:06.314Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBLIM:2024:6705",
+    "error": "Error: Failed to fetch case ECLI:NL:RBLIM:2024:6705: 403 Forbidden",
+    "timestamp": "2026-02-27T17:53:07.383Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:5039",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:5039: 403 Forbidden",
+    "timestamp": "2026-02-27T17:53:11.470Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:15147",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:15147: 403 Forbidden",
+    "timestamp": "2026-02-27T18:00:05.340Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBDHA:2024:15517",
+    "error": "Error: Failed to fetch case ECLI:NL:RBDHA:2024:15517: 403 Forbidden",
+    "timestamp": "2026-02-27T18:00:09.508Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:5057",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:5057: 403 Forbidden",
+    "timestamp": "2026-02-27T18:00:11.647Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOVE:2024:5071",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOVE:2024:5071: 403 Forbidden",
+    "timestamp": "2026-02-27T18:00:13.700Z"
+  },
+  {
+    "ecli": "ECLI:NL:TADRARL:2024:222",
+    "error": "Error: Failed to fetch case ECLI:NL:TADRARL:2024:222: 403 Forbidden",
+    "timestamp": "2026-02-27T18:02:06.735Z"
+  },
+  {
+    "ecli": "ECLI:NL:TADRARL:2024:234",
+    "error": "Error: Failed to fetch case ECLI:NL:TADRARL:2024:234: 403 Forbidden",
+    "timestamp": "2026-02-27T18:02:07.805Z"
+  },
+  {
+    "ecli": "ECLI:NL:TADRAMS:2024:157",
+    "error": "Error: Failed to fetch case ECLI:NL:TADRAMS:2024:157: 403 Forbidden",
+    "timestamp": "2026-02-27T18:02:09.889Z"
+  },
+  {
+    "ecli": "ECLI:NL:TADRSHE:2024:125",
+    "error": "Error: Failed to fetch case ECLI:NL:TADRSHE:2024:125: 403 Forbidden",
+    "timestamp": "2026-02-27T18:02:10.962Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBGEL:2024:6926",
+    "error": "Error: Failed to fetch case ECLI:NL:RBGEL:2024:6926: 403 Forbidden",
+    "timestamp": "2026-02-27T18:02:44.260Z"
+  },
+  {
+    "ecli": "ECLI:NL:CRVB:2024:1872",
+    "error": "Error: Failed to fetch case ECLI:NL:CRVB:2024:1872: 403 Forbidden",
+    "timestamp": "2026-02-27T18:02:45.339Z"
+  },
+  {
+    "ecli": "ECLI:NL:TADRSGR:2024:177",
+    "error": "Error: Failed to fetch case ECLI:NL:TADRSGR:2024:177: 403 Forbidden",
+    "timestamp": "2026-02-27T18:03:35.107Z"
+  },
+  {
+    "ecli": "ECLI:NL:PHR:2024:934",
+    "error": "Error: Failed to fetch case ECLI:NL:PHR:2024:934: 403 Forbidden",
+    "timestamp": "2026-02-27T18:04:04.120Z"
+  },
+  {
+    "ecli": "ECLI:NL:RBOBR:2024:5793",
+    "error": "Error: Failed to fetch case ECLI:NL:RBOBR:2024:5793: 403 Forbidden",
+    "timestamp": "2026-02-27T18:05:40.470Z"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "koop-core-civil-labor": {
+    "status": "pending"
+  },
+  "koop-public-criminal-tax": {
+    "status": "pending"
+  },
+  "koop-gap-fill-remaining": {
+    "status": "pending"
+  },
+  "rechtspraak-priority-foundation": {
+    "status": "pending"
+  },
+  "rechtspraak-next-50000": {
+    "status": "manual"
+  },
+  "eurlex-aml-package": {
+    "status": "pending"
+  },
+  "official-guidance-supervisors": {
+    "status": "pending"
+  }
+}

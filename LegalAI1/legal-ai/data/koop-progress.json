@@ -1,0 +1,51 @@
+{
+  "completed": [
+    "BWBR0005290",
+    "BWBR0005289",
+    "BWBR0005034",
+    "BWBR0005291",
+    "BWBR0005293",
+    "BWBR0005294",
+    "BWBR0005295",
+    "BWBR0001854",
+    "BWBR0001903",
+    "BWBR0005537",
+    "BWBR0027238",
+    "BWBR0001947",
+    "BWBR0007748",
+    "BWBR0002065",
+    "BWBR0002638",
+    "BWBR0013065",
+    "BWBR0002320",
+    "BWBR0001980",
+    "BWBR0002200",
+    "BWBR0001952",
+    "BWBR0002629",
+    "BWBR0001840",
+    "BWBR0005296",
+    "BWBR0002458",
+    "BWBR0002367",
+    "BWBR0002527",
+    "BWBR0002014",
+    "BWBR0002741",
+    "BWBR0002368",
+    "BWBR0002761"
+  ],
+  "failed": [],
+  "inProgress": null,
+  "lastUpdated": "2026-02-21T15:16:43.766Z",
+  "stats": {
+    "totalNodes": 1451,
+    "byRechtsgebied": {
+      "CIVIEL_RECHT": 8,
+      "STRAFRECHT": 3,
+      "BESTUURSRECHT": 4,
+      "ARBEIDSRECHT": 6,
+      "FISCAAL_RECHT": 6,
+      "EUROPEES_RECHT": 1,
+      "OVERIG": 1
+    },
+    "hoofdstukkenCount": 0,
+    "artikelenCount": 0
+  }
+}

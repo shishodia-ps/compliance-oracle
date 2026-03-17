@@ -1,0 +1,34 @@
+{
+  "timestamp": "2026-02-21T15:25:54.173Z",
+  "phases": {
+    "legislation": {
+      "status": "completed",
+      "count": 0,
+      "errors": []
+    },
+    "caseLaw": {
+      "status": "completed",
+      "count": 0,
+      "errors": []
+    },
+    "connections": {
+      "status": "completed",
+      "count": 581,
+      "errors": []
+    }
+  },
+  "finalStats": {
+    "totalNodes": 58,
+    "totalDocuments": 58,
+    "totalConnections": 581,
+    "byRechtsgebied": {
+      "STRAFRECHT": 3,
+      "OVERIG": 29,
+      "EUROPEES_RECHT": 1,
+      "ARBEIDSRECHT": 6,
+      "CIVIEL_RECHT": 9,
+      "FISCAAL_RECHT": 6,
+      "BESTUURSRECHT": 4
+    }
+  }
+}
